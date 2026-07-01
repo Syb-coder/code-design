@@ -1,0 +1,61 @@
+.filter-bar {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter-bar__group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-bar__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-muted);
+  white-space: nowrap;
+}
+
+.filter-bar__pills {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.filter-bar__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: var(--color-ink-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.filter-bar__pill:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-ink);
+}
+
+.filter-bar__pill.is-active {
+  background: var(--color-accent-muted);
+  color: var(--color-accent);
+  border-color: oklch(0.72 0.18 170 / 0.25);
+}
+
+.filter-bar__count {
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  opacity: 0.6;
+}

@@ -1,0 +1,35 @@
+.comp-grid--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.comp-grid--list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comp-grid__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 80px 20px;
+  color: var(--color-ink-muted);
+}
+
+.comp-grid__empty svg {
+  opacity: 0.3;
+}
+
+.comp-grid__empty p {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-ink-secondary);
+}
+
+.comp-grid__empty span {
+  font-size: var(--text-sm);
+}

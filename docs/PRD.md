@@ -1,9 +1,10 @@
 # 本地组件知识库 产品需求文档（PRD）
 
-> **文档版本**：v0.1（骨架）
+> **文档版本**：v0.2（增补四层校验 gate + 三 Skill 架构 + Playwright 抓取/对比）
 > **创建日期**：2026-06-30
 > **文档状态**：待评审
 > **文档作者**：产品经理视角整理
+> **变更说明**：v0.1 仅"AI 整理 + 用户确认"单线流程；v0.2 针对AI录入随机性新增四层校验 gate（G1静态/G2渲染/G3自评/G4人工）+ 三 Skill 架构（入库/校验/检索）+ Playwright 抓取与双截图对比机制
 
 ---
 
@@ -92,14 +93,32 @@ flowchart LR
 | **截图模式** | 用户上传组件截图 | 视觉识别还原为代码 | 看到 Dribbble/Twitter 设计稿 |
 | **URL 抓取模式** | 用户提供页面 URL | 抓取页面、提取目标组件 | 看到 CodePen/博客演示 |
 
-**整理流程**（推荐：AI 整理 + 用户确认分类）：
+**整理流程**（AI 整理 + 四层校验 gate + 用户确认）：
 
-1. AI 接收输入 → 自动识别技术栈与依赖
-2. AI 净化代码（详见 [净化规则](#311-净化规则定稿基于-21st-真实样本)）
-3. AI 生成 AI 卡片（元数据 + 使用示例 + 关键 API）
-4. AI 推荐分类目录与变体关系（用户可调整）
-5. 用户确认 → 入库
-6. AI 自动更新索引
+> AI 录入具有随机性，单凭"AI 整理 → 用户肉眼确认"会让知识库逐渐污染。本流程在 AI 产出与人工确认之间插入四道自动校验 gate，机器可判定的靠脚本、语义可判定的靠渲染截图对比 + AI 自评，最终由人工 gate 兜底。详见 [3.1.2 验证纠错机制](#312-验证纠错机制四层校验-gate)。
+
+```mermaid
+flowchart TD
+    A[接收输入: 代码/截图/URL] --> B[识别技术栈与依赖]
+    B --> C[净化代码 L1/L2/L3 规则]
+    C --> D[生成 preview.tsx + card.md + meta.json]
+    D --> G1[G1 静态校验]
+    G1 -->|失败| R1[自动修复: 语法/依赖]
+    R1 --> G1
+    G1 -->|通过| G2[G2 渲染校验 Playwright 截图对比]
+    G2 -->|失败| R2[半自动重试: 读 diff+日志重生成]
+    R2 --> G2
+    G2 -->|3次失败| Z[降级暂存 library/_inbox/]
+    G2 -->|通过| G3[G3 AI 自评]
+    G3 -->|失败| R3[AI 对照原文重生成卡片]
+    R3 --> G3
+    G3 -->|通过| G4[G4 人工确认 gate]
+    G4 -->|拒绝| Z
+    G4 -->|确认| S[正式入库 + 更新索引]
+    Z --> M[人工处理队列]
+```
+
+**关键约束**：URL 模式下 AI **禁止自己 fetch 抓页面**，必须调用 `scripts/fetch-source.ts`（Playwright 一次会话产出 HTML + 原页截图 + 网络日志 + 控制台日志）。AI 只负责编排流程与决策，抓取/校验逻辑下沉为可复用脚本。详见 [3.5 节 Skill 与脚本职责划分](#35-ai-参考机制)。
 
 #### 3.1.1 净化规则定稿（基于 21st 真实样本）
 
@@ -141,6 +160,68 @@ flowchart LR
 - SVG gooey filter → 保留（核心效果）
 - useMemo 防 hydration → 保留（防御性逻辑）
 ```
+
+#### 3.1.2 验证纠错机制（四层校验 gate）
+
+> 解决 AI 录入随机性问题的核心。机器可判定的靠脚本，语义可判定的靠渲染截图对比 + AI 自评，最终由人工 gate 兜底。
+
+**AI 录入在 7 个环节都可能出错**：
+
+| 环节 | 典型错误 | 严重度 |
+|------|---------|--------|
+| ① URL 抓取 | 抓到导航/广告/多组件混杂、SPA 渲染内容丢失 | 致命 |
+| ② 技术栈识别 | 漏依赖、误判 React/Vue | 高 |
+| ③ 净化 | 过度删除 keyframes/SVG filter（组件灵魂丢失）；不足残留 token/console | 致命 |
+| ④ AI 卡片 | 视觉描述与实际不符、Props 类型错、示例跑不起来 | 中 |
+| ⑤ meta.json | 字段缺失、tags 漏标、分类错 | 中 |
+| ⑥ 目录命名 | 非 kebab-case、放错 category | 低 |
+| ⑦ 索引更新 | CLAUDE.md 重复条目、相对路径错 | 低 |
+
+**四层 gate**：
+
+| Gate | 校验内容 | 方式 | 失败处理 |
+|------|---------|------|---------|
+| **G1 静态校验** | TS 编译通过、meta.json 走 JSON Schema、card.md frontmatter、grep 黑名单（console/token/api_key）、依赖声明一致性 | `scripts/validate-component.ts` | 自动修复（语法/依赖），最多 3 次 |
+| **G2 渲染校验** | preview.tsx 在沙箱路由渲染不报错 + **Playwright 双截图对比**（原页 vs 本地渲染，pixelmatch 相似度 ≥ 0.7） | `scripts/screenshot-diff.ts` + 预览应用 `/__sandbox__/:id` 路由 | 半自动重试（AI 读 diff.png + 渲染错误日志重生成），最多 3 次 |
+| **G3 AI 自评** | 对照"原始抓取内容 + 渲染截图"二次自检：视觉描述是否一致、Props 是否覆盖、tags 是否六维 ≥2、分类是否合理 | AI 二次调用，输出自评报告 | AI 对照原文重生成卡片，最多 2 次 |
+| **G4 人工确认** | 用户看到三件东西：渲染预览 + 净化前后 diff + AI 卡片摘要 + 自评报告 | 预览应用 UI | 拒绝则降级暂存或丢弃 |
+
+**G2 渲染校验关键设计**（最关键的一层，证明"净化没破坏组件"）：
+
+```mermaid
+flowchart LR
+    A[fetch-source.ts 抓原页] -->|original.png| H[pixelmatch 像素对比]
+    B[本地沙箱渲染] -->|rendered.png| H
+    H --> I{相似度 >= 0.7?}
+    I -->|是| J[G2 通过]
+    I -->|否| K[G2 失败 → AI 读 diff 重试]
+```
+
+- **原页截图**：URL 模式下由 `fetch-source.ts` 一次会话同步产出；代码粘贴/截图模式无原页截图时，G2 退化为"仅渲染不报错即通过"
+- **本地渲染截图**：Playwright 访问预览应用沙箱路由 `/__sandbox__/:componentId`（纯白背景、无应用 chrome），React error boundary 注入 `data-render-error` 属性供脚本判定
+- **相似度阈值 0.7**：经验值，过低漏检、过高误报，可后续调整
+- **统一基线**：截图尺寸 1280×800，动画等待 1.5s（覆盖大多数 CSS 动画起播）
+- **diff.png 留存**：用户在 G4 确认时能直接看差异图，比相似度数字更直观
+
+#### 3.1.3 修复机制（三级 + 兜底）
+
+| 级别 | 触发 | 动作 | 次数上限 |
+|------|------|------|---------|
+| 自动修复 | G1 失败（语法/依赖） | AI 读报错 → 改 → 重校 | 3 次 |
+| 半自动重试 | G2 失败（渲染/截图差异） | AI 读 error boundary 日志 + diff 区域 → 重生成 preview.tsx | 3 次 |
+| 降级暂存 | 连续失败 / 截图相似度极低 | 写入 `library/_inbox/{timestamp}-{slug}/`，附失败日志 `ingest-log.json` | — |
+
+**`_inbox` 兜底队列**：预览应用首页置顶提示"N 个组件待人工处理"，用户可查看失败原因、重新触发入库或删除。
+
+#### 3.1.4 入库后纠错（事后发现错误）
+
+预览应用每个组件卡片加 **"反馈问题"按钮**，触发三种动作：
+
+- **重新净化**：保留 `_source/` 原始素材，重跑净化流程
+- **重新生成卡片**：保留源码，重跑 G3 自评
+- **标记删除**：移入 `library/_archive/`（git 可追溯）
+
+**原始素材留存**：每次入库把"URL 抓取的原始 HTML + 原始截图 + 网络/控制台日志"存到组件目录的 `_source/` 子目录，作为后续纠错的重放基准。
 
 ### 3.2 组件存储与分类
 
@@ -272,17 +353,20 @@ library/react/ui-basic/
 
 ### 3.5 AI 参考机制
 
-**架构：CLAUDE.md 轻量路由 + 双 Skill 按需加载**
+**架构：CLAUDE.md 轻量路由 + 三 Skill 按需加载**
 
-核心设计思想：CLAUDE.md 极简（只做分发），具体逻辑封装到两个 Skill 中按需加载，最大限度节约上下文与 token 消耗。
+核心设计思想：CLAUDE.md 极简（只做分发），具体逻辑封装到三个 Skill 中按需加载，最大限度节约上下文与 token 消耗。校验独立成 Skill 是为了支持入库后纠错（[3.1.4](#314-入库后纠错事后发现错误)）与手动复查场景复用同一套校验逻辑。
 
 ```mermaid
 flowchart TD
     A[AI 进入项目] --> B[读取 CLAUDE.md 轻量路由]
     B --> C{识别用户意图}
     C -->|用户发来组件代码/截图/URL| D[调用入库 Skill]
+    C -->|入库流程转交 / 手动校验某组件| V[调用校验 Skill]
     C -->|用户 vibecoding 需要参考| E[调用检索 Skill]
-    D --> F[执行入库流程]
+    D -->|抓取+净化+生成产物后转交| V
+    V -->|校验通过回交| D
+    D --> F[人工确认 + 入库 + 更新索引]
     E --> G[执行检索流程]
     F --> H[生成: 源码+AI卡片+meta.json+更新索引]
     G --> I[返回: 匹配组件的 AI 卡片+源码路径]
@@ -297,32 +381,48 @@ flowchart TD
 - 最小使用示例
 - 源码相对路径指引
 
-> 模板见 [第 6.1 节](#61-ai-卡片模板)。AI 卡片是入库 Skill 的产物，也是检索 Skill 的返回结果。
+> 模板见 [第 6.1 节](#61-ai-卡片模板)。AI 卡片是入库 Skill 的产物，经校验 Skill 自评把关，也是检索 Skill 的返回结果。
 
 #### 组件 2：CLAUDE.md 轻量路由（第一期核心）
 
 项目根目录维护 `CLAUDE.md`，**刻意保持精简**（目标 < 50 行），只做三件事：
 1. **项目说明**：一句话告知 AI 这是组件知识库
-2. **意图分发**：告知 AI 两个 Skill 的存在与触发条件
-3. **入口指引**：指向两个 Skill 文件路径
+2. **意图分发**：告知 AI 三个 Skill 的存在与触发条件
+3. **入口指引**：指向三个 Skill 文件路径
 
 > 模板见 [第 6.2 节](#62-claudemd-轻量路由规范)。
 
 **为什么不把规范全写进 CLAUDE.md？**
 > CLAUDE.md 每次会话都会被 AI 自动读取，若塞满规范会持续占用上下文。把详细规范放入 Skill，AI 只在需要时才读取，实现「按需加载」。
 
-#### 组件 3：双 Skill（第一期并行搭建）
+#### 组件 3：三 Skill（第一期并行搭建）
+
+> Skill 是给 AI 看的流程指令（markdown），**Skill 之间不能代码级调用**，靠 AI 在读入库 Skill 时遇到"转交点"转去读校验 Skill，执行完回到入库流程继续。AI 只负责编排与决策；抓取/校验逻辑下沉为可复用脚本，保证可测试、可复现、可统一升级。
 
 **入库 Skill**（`.claude/skills/component-ingest.md`）
 - 触发：用户在对话中发来组件代码 / 截图 / URL
-- 职责：执行完整入库流程
-  1. 识别技术栈与依赖
-  2. 净化代码（移除业务无关逻辑、统一格式）
-  3. 生成 AI 卡片（元数据 + 使用示例 + 关键 API）
-  4. 创建 meta.json
-  5. 推荐分类目录（用户确认）
-  6. 更新 CLAUDE.md 索引清单
+- 职责：端到端编排入库流程（详见 [3.1 节](#31-组件收集与整理)）
+  1. **抓取素材**：URL 模式调 `scripts/fetch-source.ts`（Playwright 一次会话产出 HTML + 原页截图 + 网络/控制台日志）；**禁止 AI 自己 fetch**
+  2. 识别技术栈与依赖（结合 network.json 反推 CDN 依赖）
+  3. 净化代码（L1/L2/L3 规则）
+  4. 生成 preview.tsx + AI 卡片 + meta.json
+  5. **转交校验 Skill** 执行 G1/G2/G3，等待校验报告
+  6. 根据校验报告决定重试 / 降级暂存 / 进入 G4 人工确认
+  7. 用户 G4 确认后入库 + 更新 CLAUDE.md 索引清单
+- **fetch-source.ts 归属**：抓取是入库的起点，归入库 Skill；校验 Skill 不抓取只校验
 - 支持三种输入模式：代码粘贴 / 截图识别 / URL 抓取
+- 失败降级：连续失败写入 `library/_inbox/`（见 [3.1.3 修复机制](#313-修复机制三级--兜底)）
+
+**校验 Skill**（`.claude/skills/component-validate.md`）
+- 触发：入库 Skill 转交 / 用户手动 `/校验组件 <id>` / 入库后纠错（[3.1.4](#314-入库后纠错事后发现错误)）
+- 职责：执行 G1/G2/G3 三层校验，产出校验报告，决定重试或降级
+  1. **G1 静态校验**：调 `scripts/validate-component.ts`（TS 编译、JSON Schema、grep 黑名单、依赖一致性）
+  2. **G2 渲染校验**：调 `scripts/screenshot-diff.ts`（Playwright 访问预览应用沙箱路由 `/__sandbox__/:id`，双截图 pixelmatch 对比，相似度 ≥ 0.7）
+  3. **G3 AI 自评**：AI 对照"原始抓取内容 + 渲染截图"二次自检卡片质量（视觉描述一致性、Props 覆盖度、tags 六维 ≥2、分类合理性），输出自评报告
+  4. 汇总三层结果为校验报告（JSON + 人类可读摘要），回交入库 Skill 或展示给用户
+- **G3 归属**：G3 需要 AI 推理能力，归校验 Skill 使其完整 owning G1/G2/G3
+- 重试循环：G1/G2 失败时由入库 Skill 读报告重生成，校验 Skill 本身无状态不主动重试
+- 失败兜底：连续失败由入库 Skill 写入 `library/_inbox/`
 
 **检索 Skill**（`.claude/skills/component-search.md`）
 - 触发：用户 vibecoding 时描述需求，AI 需要找参考组件
@@ -333,7 +433,16 @@ flowchart TD
   4. 返回匹配组件的 AI 卡片 + 源码相对路径
   5. 必要时读取源码仿写
 
-**触发方式**：对话自动触发 + 显式调用（如 `/入库组件` `/检索组件`）均支持。
+**触发方式**：对话自动触发 + 显式调用（如 `/入库组件` `/校验组件` `/检索组件`）均支持。
+
+**脚本清单**（CLI 接口统一 `npx tsx scripts/xxx.ts --param value`，输出 JSON）：
+
+| 脚本 | 归属 Skill | 职责 | 关键产物 |
+|------|----------|------|---------|
+| `scripts/fetch-source.ts` | 入库 | Playwright 抓原页素材 | `_source/original.html`、`original.png`、`network.json`、`console.json` |
+| `scripts/validate-component.ts` | 校验 | G1 静态校验 | JSON 校验报告（TS 编译、Schema、黑名单、依赖一致性） |
+| `scripts/screenshot-diff.ts` | 校验 | G2 渲染校验 | `_source/rendered.png`、`diff.png`、相似度分数 |
+| `scripts/scan-components.ts` | 预览应用 | 扫描组件生成清单 | 预览应用用 registry（PRD 原有） |
 
 ### 3.4 预览 Web 应用
 
@@ -424,7 +533,8 @@ c:\000\code\design\
 │   │   └── SearchBox.tsx
 │   ├── pages/
 │   │   ├── HomePage.tsx           # 组件列表页
-│   │   └── DetailPage.tsx         # 组件详情页
+│   │   ├── DetailPage.tsx         # 组件详情页
+│   │   └── SandboxPage.tsx        # 沙箱路由 /__sandbox__/:id（供 G2 截图）
 │   ├── lib/
 │   │   ├── registry.ts            # 组件清单自动扫描
 │   │   └── search.ts              # 搜索逻辑
@@ -436,7 +546,15 @@ c:\000\code\design\
 │   │   │       ├── index.tsx      # 组件源码
 │   │   │       ├── preview.tsx    # 预览入口
 │   │   │       ├── card.md        # AI 卡片
-│   │   │       └── meta.json      # 元数据
+│   │   │       ├── meta.json      # 元数据
+│   │   │       └── _source/       # 原始素材（URL 模式留存，供纠错重放）
+│   │   │           ├── original.html
+│   │   │           ├── original.png
+│   │   │           ├── rendered.png
+│   │   │           ├── diff.png
+│   │   │           ├── network.json
+│   │   │           ├── console.json
+│   │   │           └── ingest-log.json
 │   │   ├── business/              # 业务组件块
 │   │   └── effects/               # 动效组件
 │   ├── html/                      # 原生 HTML/CSS/JS
@@ -447,15 +565,23 @@ c:\000\code\design\
 │   │   ├── ui-basic/
 │   │   ├── business/
 │   │   └── effects/
-│   └── visualization/             # 动效/可视化
-│       ├── three/
-│       ├── canvas/
-│       └── svg/
+│   ├── visualization/             # 动效/可视化
+│   │   ├── three/
+│   │   ├── canvas/
+│   │   └── svg/
+│   ├── _inbox/                    # 入库失败待人工处理队列（G1/G2/G3 连续失败降级）
+│   │   └── {timestamp}-{slug}/
+│   │       └── ingest-log.json
+│   └── _archive/                  # 已归档/标记删除组件（git 可追溯）
 ├── scripts/
-│   └── scan-components.ts         # 扫描组件生成清单
+│   ├── fetch-source.ts            # Playwright 抓原页素材（入库 Skill 调用）
+│   ├── validate-component.ts      # G1 静态校验（校验 Skill 调用）
+│   ├── screenshot-diff.ts         # G2 渲染校验 Playwright 双截图对比（校验 Skill 调用）
+│   └── scan-components.ts         # 扫描组件生成清单（预览应用用）
 └── .claude/
     └── skills/                    # 第一期：项目级 Skill
         ├── component-ingest.md    # 入库 Skill
+        ├── component-validate.md  # 校验 Skill
         └── component-search.md    # 检索 Skill
 ```
 
@@ -467,6 +593,7 @@ c:\000\code\design\
 - AI 卡片：统一 `card.md`
 - 元数据：统一 `meta.json`
 - 变体文件：`variants/{variant-name}.tsx`
+- 原始素材：`_source/`（下划线开头表示非组件目录，扫描脚本忽略）
 
 ### 5.3 数据模型
 
@@ -551,12 +678,17 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 
 本项目是个人组件知识库，供 AI 在 vibecoding 时参考本地高质量组件素材。
 
-## 两个 Skill（按需调用，勿全量读取）
+## 三个 Skill（按需调用，勿全量读取）
 
 ### 入库 Skill
 - 触发：用户发来组件代码 / 截图 / URL
 - 路径：.claude/skills/component-ingest.md
 - 调用时机：识别到用户想"整理/收录/保存这个组件"时
+
+### 校验 Skill
+- 触发：入库流程转交 / 用户手动校验某组件 / 入库后纠错
+- 路径：.claude/skills/component-validate.md
+- 调用时机：入库流程生成产物后转交；或用户说"校验/检查 xxx 组件"时
 
 ### 检索 Skill
 - 触发：用户 vibecoding 描述需求，需要参考组件
@@ -568,59 +700,106 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 - library/html/          - 原生 HTML 组件
 - library/vue/           - Vue 组件
 - library/visualization/ - 可视化组件
+- library/_inbox/        - 入库失败待人工处理队列
+- library/_archive/      - 已归档/标记删除组件
+- scripts/               - 抓取与校验脚本（fetch-source / validate-component / screenshot-diff）
 
 ## 组件存储结构（每个组件目录）
 - index.tsx / index.html / index.vue  - 源码
 - preview.tsx                          - 预览入口
 - card.md                              - AI 卡片（摘要）
 - meta.json                            - 元数据
+- _source/                             - 原始素材（URL 模式留存，供纠错重放）
 
 ## 重要约定
 - AI 卡片内源码路径用**相对路径**，勿用绝对路径
+- URL 模式入库禁止 AI 自己 fetch，必须调 scripts/fetch-source.ts
 - 详细规范见对应 Skill 文件，按需读取
 ```
 
-**设计原则**：
-- CLAUDE.md 只做"路标"，不做"说明书"
-- 具体规范全部下沉到 Skill 文件
-- AI 读取 CLAUDE.md 后，根据用户意图选择性读取对应 Skill
-
-### 6.3 双 Skill 规范
+### 6.3 三 Skill 规范
 
 #### 入库 Skill（`.claude/skills/component-ingest.md`）
 
-**核心职责**：将用户发来的组件素材整理入库
+**核心职责**：将用户发来的组件素材整理入库（端到端编排，校验环节转交校验 Skill）
 
 **完整流程**：
 1. **识别输入类型**
    - 代码粘贴 → 直接进入净化
    - 截图 → 视觉识别还原为代码
-   - URL → 抓取页面提取目标组件
+   - URL → **调 `scripts/fetch-source.ts`** 抓取（禁止 AI 自己 fetch），产出 original.html / original.png / network.json / console.json 存入 `_source/`
 2. **识别技术栈与依赖**
    - 检测 React / Vue / HTML / 可视化
+   - 结合 network.json 反推 CDN 依赖（如发现 `cdn.jsdelivr.net/npm/framer-motion` 则加依赖）
    - 提取依赖（framer-motion / gsap / three 等）
-3. **净化代码**
+3. **净化代码**（L1/L2/L3 规则，详见 [3.1.1](#311-净化规则定稿基于-21st-真实样本)）
    - 移除业务无关逻辑
    - 统一格式（Prettier 规范）
    - 规范命名（kebab-case 目录，PascalCase 组件名）
-4. **生成 AI 卡片**（card.md）
-   - 填写元数据 frontmatter
-   - 撰写视觉描述
-   - 提取关键 API / Props
-   - 编写最小使用示例
-   - 填写源码相对路径
-5. **创建 meta.json**
-6. **推荐分类目录**（用户确认）
+4. **生成产物**
+   - `preview.tsx`（预览入口，供校验 Skill 沙箱渲染）
+   - `card.md`（AI 卡片：元数据 + 视觉描述 + Props + 示例 + 源码相对路径）
+   - `meta.json`
+5. **转交校验 Skill** 执行 G1/G2/G3，等待校验报告
+6. **根据校验报告决策**
+   - 通过 → 进入 G4 人工确认
+   - 失败 → 读校验报告重生成（最多 3 次），仍失败则降级写入 `library/_inbox/`
+7. **推荐分类目录**（用户 G4 确认）
    - 按 techStack + category 推荐
    - 用户可调整
-7. **更新 CLAUDE.md 索引清单**（若有优秀组件推荐位）
-8. **告知用户入库结果**
+8. **入库 + 更新 CLAUDE.md 索引清单**
+9. **告知用户入库结果**
 
 **输出物**：
 - `library/{techStack}/{category}/{component-name}/index.tsx`
 - `library/{techStack}/{category}/{component-name}/preview.tsx`
 - `library/{techStack}/{category}/{component-name}/card.md`
 - `library/{techStack}/{category}/{component-name}/meta.json`
+- `library/{techStack}/{category}/{component-name}/_source/`（URL 模式留存原始素材）
+
+#### 校验 Skill（`.claude/skills/component-validate.md`）
+
+**核心职责**：执行 G1/G2/G3 三层校验，产出校验报告，回交入库 Skill 或展示给用户
+
+**完整流程**：
+1. **G1 静态校验**（调 `scripts/validate-component.ts`）
+   - TypeScript 编译通过（`tsc --noEmit`）
+   - meta.json 走 JSON Schema 校验（必填字段、枚举值）
+   - card.md frontmatter 校验
+   - grep 黑名单扫描：`console.log` / `debugger` / `api[_-]?key` / `token` / `https?://.*api`
+   - 依赖声明一致性：card.md 声明的 deps ⊆ package.json 已装 deps
+   - 输出 JSON 校验报告
+2. **G2 渲染校验**（调 `scripts/screenshot-diff.ts`）
+   - Playwright 访问预览应用沙箱路由 `/__sandbox__/:componentId`（1280×800，等待 1.5s 动画起播）
+   - 检测 React error boundary 注入的 `data-render-error` 属性，命中则直接判失败
+   - 本地渲染截图 `rendered.png` 与 `_source/original.png` 做 pixelmatch 对比
+   - 相似度 ≥ 0.7 通过；代码粘贴/截图模式无 original.png 时，G2 退化为"仅渲染不报错即通过"
+   - 输出相似度分数 + diff.png
+3. **G3 AI 自评**（AI 二次调用）
+   - 输入：原始抓取内容 + 渲染截图 + 已生成的 card.md
+   - 自检项：视觉描述是否与截图一致、Props 是否覆盖所有可配置项、tags 是否六维 ≥2、分类是否合理
+   - 输出自评报告（评分 + 风险点清单）
+4. **汇总校验报告**
+   - JSON 结构化报告（G1/G2/G3 各层结果 + 分数 + 错误日志）
+   - 人类可读摘要（给 G4 人工确认用）
+   - 回交入库 Skill 或展示给用户
+
+**关键约束**：
+- 校验 Skill 本身**无状态不主动重试**，重试由入库 Skill 读报告后触发
+- 失败兜底（写 `_inbox/`）由入库 Skill 负责，校验 Skill 只报告不处置
+- 手动触发（`/校验组件 <id>`）时，校验 Skill 直接展示报告，不触发入库流程
+
+**返回格式**（JSON）：
+```json
+{
+  "componentId": "react-ui-basic-button-glow",
+  "overall": "pass|fail|warn",
+  "g1": { "pass": true, "errors": [] },
+  "g2": { "pass": true, "similarity": 0.83, "diffPath": "_source/diff.png" },
+  "g3": { "pass": true, "score": 0.9, "risks": ["Props 缺少 size 参数"] },
+  "report": "人类可读摘要..."
+}
+```
 
 #### 检索 Skill（`.claude/skills/component-search.md`）
 
@@ -693,7 +872,7 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 
 ### 6.4 Skill 演进路径
 
-**第一期**（当前）：搭建双 Skill 骨架（流程框架 + 触发规则）
+**第一期**（当前）：搭建三 Skill 骨架（流程框架 + 触发规则 + 四层校验 gate）
 **第二期**：完善 Skill 细节（截图识别优化、URL 抓取健壮性、检索排序算法）
 **第三期**（可选）：自动维护索引、组件版本管理、依赖关系图
 
@@ -703,43 +882,55 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 
 ### 7.1 第一期：骨架搭建（当前阶段）
 
-**目标**：跑通「存储 → 预览 → AI 参考（入库+检索）」最小闭环
+**目标**：跑通「存储 → 预览 → AI 参考（入库+校验+检索）」最小闭环，含四层校验 gate
 
-**分三个工作流并行推进**：
+**分四个工作流并行推进**：
 
 #### 工作流 A：项目基建
 | 序号 | 任务 | 交付物 | 状态 |
 |------|------|--------|------|
 | A1 | 初始化 Vite + React 项目 | `package.json` / `vite.config.ts` | ☐ 待开始 |
-| A2 | 创建目录骨架 | `library/` 完整结构（含 variants/ 规范） | ☐ 待开始 |
+| A2 | 创建目录骨架 | `library/` 完整结构（含 `_inbox/` `_archive/` `variants/` 规范） | ☐ 待开始 |
 | A3 | 预装动画库依赖 | `framer-motion` / `gsap` / `lottie-react` / `three` | ☐ 待开始 |
+| A4 | 预装校验依赖 | `playwright` / `pixelmatch` / `pngjs` | ☐ 待开始 |
 
 #### 工作流 B：AI 协作层（核心）
 | 序号 | 任务 | 交付物 | 状态 |
 |------|------|--------|------|
-| B1 | 编写 CLAUDE.md 轻量路由 | 根目录 `CLAUDE.md`（< 50 行） | ☐ 待开始 |
-| B2 | 编写入库 Skill 骨架 | `.claude/skills/component-ingest.md`（含净化规则、变体判断、六维标签生成） | ☐ 待开始 |
-| B3 | 编写检索 Skill 骨架 | `.claude/skills/component-search.md`（含多维度加权评分、同义词扩展） | ☐ 待开始 |
-| B4 | 编写 AI 卡片模板 | `docs/ai-card-template.md` | ☐ 待开始 |
-| B5 | 编写同义词词典 | `src/lib/synonyms.json`（约 50 个常见词） | ☐ 待开始 |
+| B1 | 编写 CLAUDE.md 轻量路由 | 根目录 `CLAUDE.md`（< 50 行，三 Skill 路由） | ☐ 待开始 |
+| B2 | 编写入库 Skill 骨架 | `.claude/skills/component-ingest.md`（含净化规则、变体判断、六维标签生成、转交校验 Skill） | ☐ 待开始 |
+| B3 | 编写校验 Skill 骨架 | `.claude/skills/component-validate.md`（含 G1/G2/G3 三层、调脚本、产出 JSON 报告） | ☐ 待开始 |
+| B4 | 编写检索 Skill 骨架 | `.claude/skills/component-search.md`（含多维度加权评分、同义词扩展） | ☐ 待开始 |
+| B5 | 编写 AI 卡片模板 | `docs/ai-card-template.md` | ☐ 待开始 |
+| B6 | 编写同义词词典 | `src/lib/synonyms.json`（约 50 个常见词） | ☐ 待开始 |
 
 #### 工作流 C：预览应用
 | 序号 | 任务 | 交付物 | 状态 |
 |------|------|--------|------|
-| C1 | 编写组件清单扫描脚本 | `scripts/scan-components.ts` | ☐ 待开始 |
-| C2 | 实现预览应用核心页面 | `src/pages/HomePage.tsx` | ☐ 待开始 |
-| C3 | 实现分类筛选与搜索 | `src/components/FilterBar.tsx` | ☐ 待开始 |
-| C4 | 实现复制源码路径功能 | 剪贴板 API | ☐ 待开始 |
-| C5 | 实现查看 AI 卡片功能 | 弹窗展示 card.md | ☐ 待开始 |
-| C6 | 实现变体切换预览 | 详情页支持 variants/ 切换 | ☐ 待开始 |
-| C7 | 实现关联组件展示 | 详情页侧边栏展示 relatedComponents | ☐ 待开始 |
+| C1 | 实现预览应用核心页面 | `src/pages/HomePage.tsx` | ☐ 待开始 |
+| C2 | 实现分类筛选与搜索 | `src/components/FilterBar.tsx` | ☐ 待开始 |
+| C3 | 实现复制源码路径功能 | 剪贴板 API | ☐ 待开始 |
+| C4 | 实现查看 AI 卡片功能 | 弹窗展示 card.md | ☐ 待开始 |
+| C5 | 实现变体切换预览 | 详情页支持 variants/ 切换 | ☐ 待开始 |
+| C6 | 实现关联组件展示 | 详情页侧边栏展示 relatedComponents | ☐ 待开始 |
+| C7 | 实现沙箱路由 | `src/pages/SandboxPage.tsx`（`/__sandbox__/:id`，含 React error boundary 注入 data-render-error） | ☐ 待开始 |
+| C8 | 实现 _inbox 提示与反馈问题按钮 | 首页置顶"N 个待处理"；卡片加"反馈问题"触发重新净化/重新生成卡片/标记删除 | ☐ 待开始 |
+
+#### 工作流 D：校验脚本（G1/G2 支撑）
+| 序号 | 任务 | 交付物 | 状态 |
+|------|------|--------|------|
+| D1 | 编写组件清单扫描脚本 | `scripts/scan-components.ts`（C1 依赖） | ☐ 待开始 |
+| D2 | 编写抓取脚本 | `scripts/fetch-source.ts`（Playwright 抓原页素材，一次会话产出 HTML+截图+网络/控制台日志） | ☐ 待开始 |
+| D3 | 编写 G1 静态校验脚本 | `scripts/validate-component.ts`（TS 编译、JSON Schema、grep 黑名单、依赖一致性） | ☐ 待开始 |
+| D4 | 编写 G2 渲染校验脚本 | `scripts/screenshot-diff.ts`（Playwright 双截图 + pixelmatch 对比，依赖 C7 沙箱路由） | ☐ 待开始 |
 
 #### 验证里程碑
 | 序号 | 任务 | 验证点 | 状态 |
 |------|------|--------|------|
-| V1 | 录入第一个示例组件 | 验证入库 Skill 全流程 | ☐ 待开始 |
+| V1 | 录入第一个示例组件（URL 模式） | 验证入库 + 校验 Skill 全流程（G1/G2/G3 + G4 人工确认） | ☐ 待开始 |
 | V2 | 检索该示例组件 | 验证检索 Skill 全流程 | ☐ 待开始 |
-| V3 | 预览应用展示该组件 | 验证预览全链路 | ☐ 待开始 |
+| V3 | 预览应用展示该组件 | 验证预览全链路（含沙箱路由截图） | ☐ 待开始 |
+| V4 | 手动触发校验 `/校验组件 <id>` | 验证校验 Skill 独立可复用 | ☐ 待开始 |
 
 ### 7.2 第二期：Skill 完善与体验优化（后续迭代）
 
@@ -766,7 +957,7 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 | 8 | Vue 目录是否保留？ | 保留空目录，第一期不录入 Vue 组件 |
 | 9 | Skill 目标环境？ | Claude Code 项目级 Skill（`.claude/skills/`） |
 | 10 | 第一个示例组件？ | React 发光按钮（用 framer-motion），验证全链路 |
-| 11 | CLAUDE.md 与 Skill 职责划分？ | **CLAUDE.md 做轻量路由，双 Skill 承载具体逻辑** |
+| 11 | CLAUDE.md 与 Skill 职责划分？ | **CLAUDE.md 做轻量路由，三 Skill 承载具体逻辑**（入库/校验/检索） |
 | 12 | Skill 触发方式？ | 对话自动触发 + 显式调用均支持 |
 | 13 | 净化代码规则？ | **三层净化策略（L1移除/L2保留/L3规范化），基于 21st 真实样本定稿** |
 | 14 | 检索算法？ | **多维度加权评分**（tags×3 + category×2 + 技术栈×2 + 视觉描述×1）+ 同义词扩展 |
@@ -779,6 +970,13 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 | 21 | 归档机制？ | **第一期不做**，手动删除或移到 `library/_archive/` |
 | 22 | 检索返回数量？ | 默认 Top 5，可扩展到 10 |
 | 23 | 无结果兜底？ | 提供最接近的 2-3 个组件 + 建议收集入库 |
+| 24 | AI 录入随机性如何治？ | **四层校验 gate**（G1静态/G2渲染/G3自评/G4人工），机器判定的靠脚本、语义判定的靠截图对比+AI自评、人工兜底 |
+| 25 | URL 抓取用什么工具？ | **Playwright**（fetch-source.ts 一次会话产出 HTML+截图+网络/控制台日志），禁止 AI 自己 fetch |
+| 26 | G2 渲染对比工具？ | **Playwright 双截图 + pixelmatch**，相似度阈值 0.7，统一基线 1280×800+1.5s 动画等待 |
+| 27 | 校验是否独立成 Skill？ | **是**，校验 Skill 完整 owning G1/G2/G3，支持入库后纠错与手动 `/校验组件` 复用 |
+| 28 | fetch-source 归属？ | **入库 Skill**（抓取是入库起点）；G3 归**校验 Skill**（需 AI 推理，完整 owning 三层） |
+| 29 | 失败兜底？ | 连续失败写入 `library/_inbox/`，预览应用首页置顶提示"N 个待处理" |
+| 30 | 入库后纠错？ | 卡片加"反馈问题"按钮，支持重新净化/重新生成卡片/标记删除（移 `_archive/`） |
 
 ## 9. 待确认事项
 
@@ -789,6 +987,11 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 | 1 | 同义词词典初始收录哪些词？ | 约 50 个常见组件词，实施时填充 | 非阻塞 |
 | 2 | 预览应用 iframe 隔离的具体实现？ | srcdoc 或独立路由，实施时验证 | 非阻塞 |
 | 3 | 变体判断的"差异程度"如何量化？ | 第一期靠 AI 判断 + 用户确认，第二期加算法 | 非阻塞 |
+| 4 | G2 相似度阈值 0.7 是否合适？ | 实施时用真实样本校准，过低漏检/过高误报 | 非阻塞，可配置 |
+| 5 | fetch-source 自动选择器探测是否够用？ | 默认自动探测兜底，用户可传 `--selector` 覆盖 | 非阻塞 |
+| 6 | 网络日志反推依赖是否纳入第一期？ | 倾向纳入（显著提升 meta.json 准确性），实施时验证 CDN 域名映射 | 非阻塞 |
+| 7 | G3 AI 自评是否每次入库都跑？ | 倾向每次跑（显著提升卡片质量），token 消耗可接受 | 非阻塞，可配置开关 |
+| 8 | 截图模式（视觉还原为代码）何时做？ | 倾向第一期只做 URL + 代码粘贴，截图识别留第二期 | 非阻塞 |
 
 ---
 
@@ -806,3 +1009,9 @@ import { GlowButton } from '@/library/react/ui-basic/button-glow';
 | AI 卡片 | 组件的精简摘要文件 |
 | HMR | Hot Module Replacement，热模块替换 |
 | kebab-case | 短横线命名法，如 `button-glow` |
+| G1/G2/G3/G4 | 四层校验 gate：静态/渲染/AI自评/人工 |
+| pixelmatch | 像素级图片对比库，用于 G2 渲染相似度计算 |
+| 沙箱路由 | 预览应用的 `/__sandbox__/:id` 路由，纯白背景无 chrome，供 Playwright 截图 |
+| _source/ | 组件目录下留存原始素材的子目录（URL 模式入库产物） |
+| _inbox/ | 入库失败待人工处理队列目录 |
+| _archive/ | 已归档/标记删除组件目录 |

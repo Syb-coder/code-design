@@ -1,0 +1,123 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__header {
+  padding: 40px 32px 0;
+}
+
+.home__brand {
+  max-width: 720px;
+}
+
+.home__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.home__title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+
+.home__subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 480px;
+}
+
+.home__toolbar {
+  padding: 24px 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home__toolbar-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.home__view-toggle {
+  display: flex;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.home__view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: none;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.home__view-btn:hover {
+  color: var(--color-ink);
+  background: var(--color-surface-hover);
+}
+
+.home__view-btn.is-active {
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+}
+
+.home__status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  font-family: var(--font-mono);
+}
+
+.home__clear-filters {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.home__clear-filters:hover {
+  text-decoration: underline;
+}
+
+.home__content {
+  flex: 1;
+  padding: 12px 32px 40px;
+}
+
+@media (max-width: 768px) {
+  .home__header,
+  .home__toolbar,
+  .home__status,
+  .home__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .home__toolbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
