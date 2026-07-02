@@ -1,0 +1,38 @@
+{
+  "total": 1,
+  "pending": 0,
+  "processing": 0,
+  "done": 1,
+  "failed": 0,
+  "tasks": [
+    {
+      "taskId": "ingest-001-modern-login-signup",
+      "index": 1,
+      "name": "Modern Login Signup",
+      "slug": "modern-login-signup",
+      "url": "https://21st.dev/@pulseawan/components/modern-login-signup",
+      "sourceDir": ".trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source",
+      "categoryHint": {
+        "techStack": "react",
+        "category": "business"
+      },
+      "status": "done",
+      "skillPath": ".trae/skills/component-ingest/SKILL.md",
+      "instructions": [
+        "读取入库 Skill: .trae/skills/component-ingest/SKILL.md",
+        "读取抓取素材: .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source/original.html, .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source/original.png, .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source/network.json, .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source/console.json, .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source/metadata.json",
+        "识别技术栈与依赖（结合 network.json 反推 CDN 依赖）",
+        "按 L1/L2/L3 规则净化代码",
+        "生成产物到 library/react/business/modern-login-signup/: index.tsx, preview.tsx, card.md, meta.json",
+        "把 _source/ 从 .trae/skills/component-ingest/.batch/fetched/modern-login-signup/_source 移动到 library/react/business/modern-login-signup/_source/",
+        "转交校验 Skill (.trae/skills/component-validate/SKILL.md) 执行 G1/G2/G3",
+        "根据校验报告决定重试（最多3次）或降级到 library/_inbox/",
+        "校验通过后进入 G4 人工确认，向用户展示渲染预览 + diff + AI 卡片 + 自评报告",
+        "用户确认后正式入库 + 更新 CLAUDE.md 索引",
+        "更新本任务 status 为 done（或 failed），写回 ingest-tasks.json"
+      ]
+    }
+  ],
+  "generatedAt": "2026-07-01T11:14:52.361Z",
+  "skillPath": ".trae/skills/component-ingest/SKILL.md"
+}

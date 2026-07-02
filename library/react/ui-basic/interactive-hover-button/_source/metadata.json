@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@magicui/components/interactive-hover-button",
+  "finalUrl": "https://21st.dev/@magicui/components/interactive-hover-button",
+  "title": "Interactive Hover Button | Community Components | 21st",
+  "fetchedAt": "2026-07-02T13:27:59.235Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "import { InteractiveHoverButton } from \"@/components/ui/interactive-hover-button\";\n\n\nfunction InteractiveHoverButtonDemo() {\n  return (\n    <div className=\"relative justify-center\">\n      <InteractiveHoverButton />\n    </div>\n  );\n}\n\nexport { InteractiveHoverButtonDemo };",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Interactive Hover Button",
+    "description": "A visually engaging button component that responds to hover with dynamic transitions, adapting smoothly between light and dark modes for enhanced user interactivity.",
+    "url": "https://21st.dev/@magicui/components/interactive-hover-button",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Magic UI"
+    },
+    "dateCreated": "2024-12-23T14:43:40.196876",
+    "license": "mit"
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/magicui/interactive-hover-button\""
+}

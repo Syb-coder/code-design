@@ -1,0 +1,34 @@
+{
+  "url": "https://21st.dev/@pulseawan/components/modern-login-signup",
+  "finalUrl": "https://21st.dev/@pulseawan/components/modern-login-signup",
+  "title": "Modern Login & Signup | Community Components - 21st | 21st",
+  "fetchedAt": "2026-07-01T11:14:38.579Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [
+    "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+  ],
+  "demoCode": "import Component from \"@/components/ui/modern-login-signup\";\n\nexport default function DemoOne() {\n  return <Component />;\n}\n",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Modern Login & Signup",
+    "description": "Modern, responsive login and signup UI components built with React and Tailwind CSS — ready-to-use authentication forms with clean design and smooth UX.",
+    "url": "https://21st.dev/@pulseawan/components/modern-login-signup",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Asif"
+    },
+    "dateCreated": "2026-06-30T06:39:18.325126",
+    "license": ""
+  }
+}

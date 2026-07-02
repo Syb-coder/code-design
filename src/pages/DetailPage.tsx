@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { components } from '../lib/mock-data'
 import ComponentPreview from '../components/ComponentPreview'
@@ -14,6 +14,23 @@ export default function DetailPage() {
   const [toastMsg, setToastMsg] = useState('')
   const [activeVariant, setActiveVariant] = useState(0)
   const [activeTab, setActiveTab] = useState<'card' | 'source'>('card')
+  // 全屏预览 Modal 开关
+  const [fullscreenOpen, setFullscreenOpen] = useState(false)
+
+  // ESC 键关闭全屏 Modal
+  useEffect(() => {
+    if (!fullscreenOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setFullscreenOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    // 防止背景滚动
+    document.body.style.overflow = 'hidden'
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  }, [fullscreenOpen])
 
   const showToast = useCallback((msg: string) => {
     setToastMsg(msg)
@@ -45,6 +62,9 @@ export default function DetailPage() {
   const relatedComponents = component.relatedComponents
     ? components.filter(c => component.relatedComponents!.includes(c.id))
     : []
+
+  // 提取 sourceUrl 为局部常量，便于在 JSX 闭包（onClick）中收窄为 string 类型
+  const sourceUrl = component.sourceUrl
 
   return (
     <div className="detail-page">
@@ -96,6 +116,17 @@ export default function DetailPage() {
                 previewPath={component.previewPath}
                 componentId={component.id}
               />
+              {/* 全屏按钮：悬浮在预览框右上角 */}
+              <button
+                className="detail-page__fullscreen-btn"
+                onClick={() => setFullscreenOpen(true)}
+                title="全屏预览"
+                aria-label="全屏预览"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M2 6V2.5A.5.5 0 012.5 2H6M10 2h3.5a.5.5 0 01.5.5V6M14 10v3.5a.5.5 0 01-.5.5H10M6 14H2.5a.5.5 0 01-.5-.5V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
             </div>
             {component.variants && component.variants.length > 0 && (
               <div className="detail-page__variants">
@@ -241,14 +272,43 @@ export default function DetailPage() {
                   <span className="detail-page__source-label">预览文件</span>
                   <code>{component.previewPath}</code>
                 </div>
+                {/* 源组件 URL：显式展示 + 复制 + 一键新标签跳转 */}
+                {sourceUrl ? (
+                  <div className="detail-page__source-url">
+                    <span className="detail-page__source-label">源组件 URL</span>
+                    <code className="detail-page__source-url-code" title={sourceUrl}>
+                      {sourceUrl}
+                    </code>
+                    <button
+                      className="detail-page__copy-inline"
+                      onClick={() => copyToClipboard(sourceUrl, '源组件 URL')}
+                    >
+                      复制
+                    </button>
+                    <a
+                      className="detail-page__open-btn"
+                      href={sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="在新标签页打开源组件"
+                    >
+                      <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <path d="M5 2h7v7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 2L6 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M10 8v3.5A1.5 1.5 0 018.5 13h-6A1.5 1.5 0 011 11.5v-6A1.5 1.5 0 012.5 4H6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      新标签打开
+                    </a>
+                  </div>
+                ) : (
+                  <div className="detail-page__source-path">
+                    <span className="detail-page__source-label">源组件 URL</span>
+                    <span className="detail-page__source-empty">无</span>
+                  </div>
+                )}
                 <div className="detail-page__source-meta">
                   <span>入库日期: {component.createdAt}</span>
                   {component.author && <span>作者: {component.author}</span>}
-                  {component.sourceUrl && (
-                    <a href={component.sourceUrl} target="_blank" rel="noopener noreferrer">
-                      查看原始来源
-                    </a>
-                  )}
                 </div>
               </div>
             )}
@@ -274,6 +334,34 @@ export default function DetailPage() {
           )}
         </aside>
       </div>
+
+      {/* 全屏预览 Modal：点击全屏按钮打开，ESC 或返回按钮关闭 */}
+      {fullscreenOpen && (
+        <div className="detail-page__fullscreen" role="dialog" aria-modal="true" aria-label="全屏预览">
+          {/* 顶部返回栏 */}
+          <div className="detail-page__fullscreen-bar">
+            <button
+              className="detail-page__fullscreen-back"
+              onClick={() => setFullscreenOpen(false)}
+              title="返回详情页"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              返回
+            </button>
+            <span className="detail-page__fullscreen-title">{component.name}</span>
+          </div>
+          {/* 全屏预览区：组件 1:1 渲染 */}
+          <div className="detail-page__fullscreen-stage">
+            <ComponentPreview
+              previewPath={component.previewPath}
+              componentId={component.id}
+              fillContainer
+            />
+          </div>
+        </div>
+      )}
 
       {/* Toast 通知 */}
       {toastVisible && (

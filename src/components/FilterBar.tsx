@@ -11,6 +11,8 @@ const CAT_LABELS: Record<Category, string> = {
   button: '按钮',
   effects: '动效交互',
   '3d': '3D',
+  business: '业务场景',
+  visualization: '可视化',
 }
 
 interface Props {
@@ -20,7 +22,7 @@ interface Props {
 
 export default function FilterBar({ category, onCategoryChange }: Props) {
   const counts = getFilterCounts()
-  const cats: Category[] = ['button', 'form', 'navigation', 'layout', 'data-display', 'feedback', 'effects', '3d']
+  const cats: Category[] = ['button', 'form', 'navigation', 'layout', 'data-display', 'feedback', 'effects', '3d', 'business', 'visualization']
 
   return (
     <div className="filter-bar">

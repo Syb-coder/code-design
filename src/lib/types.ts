@@ -25,14 +25,16 @@ export interface ComponentMeta {
 export type TechStack = 'react' | 'html' | 'vue'
 
 export type Category =
-  | 'layout'       // 布局（网格、容器、分割）
-  | 'navigation'   // 导航（侧边栏、顶栏、面包屑）
-  | 'form'         // 表单（输入框、选择器、开关）
-  | 'data-display' // 数据展示（统计卡片、表格、图表）
-  | 'feedback'     // 反馈（消息通知、对话框、加载）
-  | 'button'       // 按钮（各种风格按钮）
-  | 'effects'      // 动效交互（悬停、滚动、磁吸）
-  | '3d'           // 3D 场景
+  | 'layout'         // 布局（网格、容器、分割）
+  | 'navigation'     // 导航（侧边栏、顶栏、面包屑）
+  | 'form'           // 表单（输入框、选择器、开关）
+  | 'data-display'   // 数据展示（统计卡片、表格、图表）
+  | 'feedback'       // 反馈（消息通知、对话框、加载）
+  | 'button'         // 按钮（各种风格按钮）
+  | 'effects'        // 动效交互（悬停、滚动、磁吸）
+  | '3d'             // 3D 场景
+  | 'business'       // 业务场景（登录、注册、认证等完整业务模块）
+  | 'visualization'  // 可视化（图表、地图、数据可视化）
 
 export interface Variant {
   name: string

@@ -1,0 +1,33 @@
+{
+  "id": "react-effects-shining-text",
+  "name": "Shining Text",
+  "techStack": "react",
+  "styling": "inline-style",
+  "animation": "css-keyframes",
+  "sourceType": "rendered-dom",
+  "category": "effects",
+  "tags": [
+    "text",
+    "shining",
+    "glow",
+    "gradient",
+    "minimal",
+    "calm",
+    "thoughtful",
+    "loading",
+    "ai",
+    "css-only",
+    "background-clip",
+    "futuristic",
+    "cyberpunk",
+    "sleek"
+  ],
+  "dependencies": [],
+  "fonts": [],
+  "source": "21st.dev",
+  "sourceUrl": "https://21st.dev/@hextaui/components/shining-text",
+  "author": "HextaUI",
+  "license": "mit",
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

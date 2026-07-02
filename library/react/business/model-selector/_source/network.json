@@ -1,0 +1,2249 @@
+[
+  {
+    "url": "https://21st.dev/@dqnamo/components/model-selector",
+    "method": "GET",
+    "resourceType": "document",
+    "status": 200,
+    "headers": {
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/12dfa0104b317c6e-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/4c9022eda93cbc91-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/4fafff4a0a9a6a75-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/7e0029dff07248dd-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/d62eeeefdf00efec-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/de0e48ef74e52fe6-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/css/791989183f429939.css",
+    "method": "GET",
+    "resourceType": "stylesheet",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+    "method": "GET",
+    "resourceType": "stylesheet",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/webpack-91aa0461441be64b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/478f1f74-998c95e64b731fed.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64058-dff5bfbedf4d7d7f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/main-app-3942c6518210f6be.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/0206212e-739c2a011e322d3d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64323-3179768796011fdf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/83262-9eef1e6f59a4fc19.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51363-e3e90d77b03fa221.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/58207-7e895d65ddb98fb5.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/50123-85c61682d9964be5.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/63091-ebca387bcb206998.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/93286-5ec4fe4ab0c915af.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/82587-db8d39ca518982ce.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/99794-f3f5d48e3597e38b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76177-8027be10251ff2e1.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/85561-f2046f9fd1e2714e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/74643-5acb4a3f42b561a9.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/90331-3f10c8f25b303776.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/21972-af6d25a10a5519e7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/33506-d0e5d35a2adc1b39.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/%5Busername%5D/%5Bcomponent_slug%5D/loading-ba91bbc01a38847f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/17711-aa32431783669b8d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/loading-5091f8195d03d672.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/global-error-ea89d1a3d5f56388.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/8a20a44a-e9fafbd51fba4fb9.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/fcea31f8-3dba28c14a2e7fc3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/c510f067-f269cc3bc69584eb.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/c15208c6-8a3a6bbd1575efc3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/2c423691-50d896c2efee64c7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/238edd4e-2f8984f42beec25c.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/4bb1dc3e-3ca1e2d175bff9f7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/71777-863188a071277965.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76037-995c7f531edeed2e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/97245-866d1f5496c073f0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/36673-d2b04d04bf8c566b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/71315-7530e54e991bd215.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/16671-22293ff29a918809.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/11845-a41afd05ae128cc8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51411-ae75be4f43ad0614.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/30815-2bb2468840a21241.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/29277-c436ebe1db61f889.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/18106-086c16df035ac1c8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/33432-8c818f3465a6933f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/62977-cbe346bbd3ae3842.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64047-038f500e2cb3fa42.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/47696-fd969b9b569335dc.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/44720-7084277f6bb4d015.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/49270-8c1dcadd015e7ac3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/82583-e8010ac112c96b81.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/58182-079b6a7a88151039.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/59997-2c1f009608e950c3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/75535-9e53b832c4cd702d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/68816-9c4b68ae4906abaf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/layout-1a492712c87439a3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/50287-c610c8cb742104b8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(news)/layout-27c9aae4a4a7a350.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/75597-790e52a86e0a1ceb.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/27571-7f34a97e458dda19.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/85548-b118d950fa0fc048.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/9992-058fe35a1949bae2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/83999-48dd9c97640f2793.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/88944-c53012632452e649.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/98674-7277925c52b4b403.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/11136-c1c917ac0e015d30.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/77934-c4b7bcda025b7892.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76292-d28627fc84e1266f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/60750-713a4ff23edf1dee.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/65040-124ba8f391b72726.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/49607-7cbf2fa464d07a4e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/84287-42e3d0825dae6ace.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/40729-88a9b94e15ace980.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/32837-beb35c87e126d54c.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/37987-b92617cfe09eae49.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51863-92ba77c8881ce603.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/1439-1f756abe0c7ced60.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/65317-221c080c78b2766a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/95607-b57c3a3bc6f31216.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/35011-281445df90d0aa86.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64094-3be5bc442f458486.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/layout-aaa2de8c9f4c7848.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-X7C2K3V7GX",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 307,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T76WQSTW",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/fonts/GeneralSans-Medium.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/fonts/GeneralSans-Semibold.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/46d8dd05-c371e99ad5e51627.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/d7af8c32-e9d754aa81a93926.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/80325-e9e2e01358c234e2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/97364-39af88950735862d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/41588-61e690a8dbe30458.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/9195-8ec1e0c659e2c03a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/28277-3f28cb42bfb15019.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/15036-74095e7d9397acbf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/99539-22e412117118a9d2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/84439-754cc8d028a4c8d7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/%5Busername%5D/%5Bcomponent_slug%5D/page-41a896730b23820a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://pbs.twimg.com/profile_images/2008694114103996416/mSlJwkpj.jpg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/clerk.browser.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "referer": "https://21st.dev/"
+    }
+  },
+  {
+    "url": "https://cdn.tolt.io/tolt.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://static.ads-twitter.com/uwt.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-X7C2K3V7GX&gtm=45je66u1v9201273917za200zd9201273917&_p=1782974972600&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&are=1&cid=248792868.1782974975&frm=0&pscdl=noapi&rcb=16&sr=1280x800&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=115938465~115938469~118897920~118897930~119027224~119576881~119576885~119576891~119576895&sid=1782974974&sct=1&seg=0&dl=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fmodel-selector&dt=Model%20Selector%20Prompt%20%7C%20Community%20Components%20%7C%2021st&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=4196",
+    "method": "POST",
+    "resourceType": "fetch",
+    "status": 204,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "failed": true,
+    "failureText": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://cdn.21st.dev/larsen66/model-selector/default/bundle.1782935263971.html?theme=light",
+    "method": "GET",
+    "resourceType": "document",
+    "status": 200,
+    "headers": {
+      "referer": "https://21st.dev/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "url": "https://21.up.railway.app/compile-css",
+    "method": "POST",
+    "resourceType": "fetch",
+    "status": 500,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "content-type": "text/plain;charset=UTF-8",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/89737.78fbb79cb5f5ec27.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/api/trpc/copyGuard.status,users.isCurrentUserAdmin,demos.getWinnerBadgesByDemoIds,demos.getSimilarDemosFeed?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3A%7B%22demoIds%22%3A%5B16717%5D%7D%7D%2C%223%22%3A%7B%22json%22%3A%7B%22demoId%22%3A16717%2C%22componentId%22%3A8778%2C%22limit%22%3A24%2C%22direction%22%3A%22forward%22%7D%7D%7D",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "x-anon-id": "xdq4w3att7g7shqzp5k5m",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "x-trpc-source": "nextjs-react",
+      "trpc-accept": "application/jsonl",
+      "content-type": "application/json"
+    },
+    "failed": true,
+    "failureText": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://21st.dev/@dqnamo?_rsc=ehvie",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "rsc": "1",
+      "next-router-segment-prefetch": "/_tree",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "next-router-prefetch": "1",
+      "next-url": "/community/components/dqnamo/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36"
+    }
+  },
+  {
+    "url": "blob:https://21st.dev/992c90ff-4b4d-4b89-be7b-3a6880cfa0e1",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/v1/environment?__clerk_api_version=2025-11-10&_clerk_js_version=5.127.0",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/v1/client?__clerk_api_version=2025-11-10&_clerk_js_version=5.127.0",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/psl/dist/psl.min.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FShanghai%26zh-CN%26Google%20Inc.%26Win32%26255%261280%26800%2632%2624%261280%26800%2610%26na&eci=3&event=%7B%7D&event_id=4efe3d38-434d-4f76-bedd-070e4de9f004&integration=gtm-ad-manager&p_id=Twitter&p_user_id=0&pl_id=76dd5d96-b163-4180-b98d-a621adc8c29f&pt=Model%20Selector%20Prompt%20%7C%20Community%20Components%20%7C%2021st&tw_document_href=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fmodel-selector&tw_iframe_status=0&tw_pid_src=1&twpid=tw.1782974975337.331712350974723479&txn_id=qwpt5&type=javascript&version=2.3.53",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FShanghai%26zh-CN%26Google%20Inc.%26Win32%26255%261280%26800%2632%2624%261280%26800%2610%26na&eci=3&event=%7B%7D&event_id=4efe3d38-434d-4f76-bedd-070e4de9f004&integration=gtm-ad-manager&p_id=Twitter&p_user_id=0&pl_id=76dd5d96-b163-4180-b98d-a621adc8c29f&pt=Model%20Selector%20Prompt%20%7C%20Community%20Components%20%7C%2021st&tw_document_href=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fmodel-selector&tw_iframe_status=0&tw_pid_src=1&twpid=tw.1782974975337.331712350974723479&txn_id=qwpt5&type=javascript&version=2.3.53",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/@dqnamo?_rsc=675xq",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "rsc": "1",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "next-router-prefetch": "1",
+      "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%22(marketplace)%22%2C%7B%22children%22%3A%5B%22community%22%2C%7B%22children%22%3A%5B%5B%22username%22%2C%22dqnamo%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2C%22refetch%22%2Cfalse%5D%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+      "next-url": "/community/components/dqnamo/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36"
+    }
+  },
+  {
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "origin": "https://cdn.21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://cdn.21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18ybXdGd3U1cW5FQXozZ1U2dmxnMW13ZU1PZEoiLCJyaWQiOiJ1c2VyXzNBM01ZR3EzYmZnN2N1R01rb1hDWFRHUjU4byJ9",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_31CmmHIlA3U1f8L2XKi42ccVMWO/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://pbs.twimg.com/profile_images/1986374407779196931/Br48DGGN_400x400.jpg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18ydGtiQlBjalhzMzl1eGNmR2h3c3VTWE1VU1YifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/32560488?v=4",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/images/motion-primitives.svg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2xJxXqdwWohYrdd6fiMYrS9hbmO/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18ydVpQWjBaTmttUzJ4eWlubElPM0VQQk1VMXIifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2y5Wd5l713ZIFYjX19aZXSyXd6b/avatar.svg+xml",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_32hbh6QoSVv3IJTJfaQWBLHRl6N/avatar.jpeg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2zMtrqo9RMaaIn4f8F2z3oeY497/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18ycm1QZE9TdDV6aWZkeGswZVlUOG9QdUxDSjEifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2tWTE0rCrloVAVylFPYfp10xU92/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yekFzdlBhQVN2bFB2ZVp5UmZ3dWhlaHFtZmoifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2rQ1QHrJyxpmWMHhqhANzWMc64n/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/21st.dev/model-picker/default/preview.1777398590983.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/moazamtrade/ai-models-preview/default/preview.1758547125079.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/johuniq/ai-prompt-box/default/preview.1773916120385.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_2tkbBPFWYn8YMjZNHwgIuP3yzvd/gradient-selector-card/default/preview.1750810782917.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/21st.dev/mode-selector/default/preview.1777396774991.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/model-selector/default/preview.1750560338575.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_2rkgEMvkQ7I2oxalLXELCy8NObN/prompt-suggestion/default/preview.png?v=1",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/easemize/material-ui-autocomplete-combobox-multi-select/default/preview.1780459365110.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/isaiahbjork/animated-card-options/default/preview.1748626346507.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/minhxthanh/section-component/default/preview.1749180213969.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/easemize/material-ui-autocomplete-combobox/default/preview.1779012769080.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ruixen.ui/live-preview-style-select/default/preview.1758909455534.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/isaiahbjork/prediction-market-card/default/preview.1748909882371.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/kavikatiyar/performance-benchmark-card/default/preview.1759907015018.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ravikatiyar162/fare-selector/default/preview.1758676046078.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/priority-selector/default/preview.1749412324106.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/project-selector/default/preview.1749370966580.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ruixen.ui/hover-preview-button/default/preview.1758651245603.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/sshahaider/search-modal/default/preview.1758821839137.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/multi-selector/default/preview.1749989233119.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_2uZPYwRKdEOMrOL0qhU6KNaMNK0/interactive-selector/default/preview.1750807248564.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/isaiahbjork/message-dock/default/preview.1748722456995.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_2rQ1QHrJyxpmWMHhqhANzWMc64n/modal-pricing/default/preview.1738070756820.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ruixen.ui/preview-switch-hero/default/preview.1780070410938.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/%5Busername%5D/loading-4a61fd7c1e69689f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "blob:https://21st.dev/fc073dd4-a1c9-4b7d-a52f-842da5618987",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/framework_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/vendors_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/ui-common_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/api/trpc/users.isCurrentUserAdmin?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/model-selector",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "x-anon-id": "xdq4w3att7g7shqzp5k5m",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "x-trpc-source": "nextjs-react",
+      "trpc-accept": "application/jsonl",
+      "content-type": "application/json"
+    },
+    "failed": true,
+    "failureText": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/rum?",
+    "method": "POST",
+    "resourceType": "xhr",
+    "status": 204,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://cdn.21st.dev/larsen66/model-selector/default/bundle.1782935263971.html?theme=light",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/subscriptionDetails_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  }
+]

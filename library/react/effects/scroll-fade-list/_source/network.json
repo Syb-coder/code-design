@@ -1,0 +1,2303 @@
+[
+  {
+    "url": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+    "method": "GET",
+    "resourceType": "document",
+    "status": 200,
+    "headers": {
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/12dfa0104b317c6e-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/4c9022eda93cbc91-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/4fafff4a0a9a6a75-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/7e0029dff07248dd-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/d62eeeefdf00efec-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/media/de0e48ef74e52fe6-s.p.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/css/791989183f429939.css",
+    "method": "GET",
+    "resourceType": "stylesheet",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+    "method": "GET",
+    "resourceType": "stylesheet",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/webpack-91aa0461441be64b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/478f1f74-998c95e64b731fed.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64058-dff5bfbedf4d7d7f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/main-app-3942c6518210f6be.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/0206212e-739c2a011e322d3d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64323-3179768796011fdf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/83262-9eef1e6f59a4fc19.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51363-e3e90d77b03fa221.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/58207-7e895d65ddb98fb5.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/50123-85c61682d9964be5.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/63091-ebca387bcb206998.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/93286-5ec4fe4ab0c915af.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/82587-db8d39ca518982ce.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/99794-f3f5d48e3597e38b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76177-8027be10251ff2e1.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/85561-f2046f9fd1e2714e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/74643-5acb4a3f42b561a9.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/90331-3f10c8f25b303776.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/21972-af6d25a10a5519e7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/33506-d0e5d35a2adc1b39.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/%5Busername%5D/%5Bcomponent_slug%5D/loading-ba91bbc01a38847f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/17711-aa32431783669b8d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/loading-5091f8195d03d672.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/global-error-ea89d1a3d5f56388.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/8a20a44a-e9fafbd51fba4fb9.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/fcea31f8-3dba28c14a2e7fc3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/c510f067-f269cc3bc69584eb.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/c15208c6-8a3a6bbd1575efc3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/2c423691-50d896c2efee64c7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/238edd4e-2f8984f42beec25c.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/4bb1dc3e-3ca1e2d175bff9f7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/71777-863188a071277965.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76037-995c7f531edeed2e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/97245-866d1f5496c073f0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/36673-d2b04d04bf8c566b.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/71315-7530e54e991bd215.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/16671-22293ff29a918809.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/11845-a41afd05ae128cc8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51411-ae75be4f43ad0614.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/30815-2bb2468840a21241.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/29277-c436ebe1db61f889.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/18106-086c16df035ac1c8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/33432-8c818f3465a6933f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/62977-cbe346bbd3ae3842.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64047-038f500e2cb3fa42.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/47696-fd969b9b569335dc.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/44720-7084277f6bb4d015.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/49270-8c1dcadd015e7ac3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/82583-e8010ac112c96b81.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/58182-079b6a7a88151039.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/59997-2c1f009608e950c3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/75535-9e53b832c4cd702d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/68816-9c4b68ae4906abaf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/layout-1a492712c87439a3.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/50287-c610c8cb742104b8.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(news)/layout-27c9aae4a4a7a350.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/75597-790e52a86e0a1ceb.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/27571-7f34a97e458dda19.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/85548-b118d950fa0fc048.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/9992-058fe35a1949bae2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/83999-48dd9c97640f2793.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/88944-c53012632452e649.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/98674-7277925c52b4b403.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/11136-c1c917ac0e015d30.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/77934-c4b7bcda025b7892.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/76292-d28627fc84e1266f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/60750-713a4ff23edf1dee.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/65040-124ba8f391b72726.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/49607-7cbf2fa464d07a4e.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/84287-42e3d0825dae6ace.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/40729-88a9b94e15ace980.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/32837-beb35c87e126d54c.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/37987-b92617cfe09eae49.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/51863-92ba77c8881ce603.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/1439-1f756abe0c7ced60.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/65317-221c080c78b2766a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/95607-b57c3a3bc6f31216.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/35011-281445df90d0aa86.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/64094-3be5bc442f458486.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/layout-aaa2de8c9f4c7848.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-X7C2K3V7GX",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 307,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T76WQSTW",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/fonts/GeneralSans-Medium.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/fonts/GeneralSans-Semibold.woff2",
+    "method": "GET",
+    "resourceType": "font",
+    "status": 200,
+    "headers": {
+      "origin": "https://21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/_next/static/css/4ea20f208be2630c.css",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/clerk.browser.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "referer": "https://21st.dev/"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/46d8dd05-c371e99ad5e51627.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/d7af8c32-e9d754aa81a93926.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/97364-39af88950735862d.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/41588-61e690a8dbe30458.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/9195-8ec1e0c659e2c03a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/28277-3f28cb42bfb15019.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/15036-74095e7d9397acbf.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/99539-22e412117118a9d2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/84439-754cc8d028a4c8d7.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/components/%5Busername%5D/%5Bcomponent_slug%5D/page-41a896730b23820a.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://pbs.twimg.com/profile_images/2008694114103996416/mSlJwkpj.jpg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/80325-e9e2e01358c234e2.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/api/trpc/copyGuard.status?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "x-anon-id": "r746b8cohlmr35bgt2",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "x-trpc-source": "nextjs-react",
+      "trpc-accept": "application/jsonl",
+      "content-type": "application/json"
+    }
+  },
+  {
+    "url": "https://cdn.tolt.io/tolt.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://static.ads-twitter.com/uwt.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-X7C2K3V7GX&cx=c&gtm=4e66u1",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-X7C2K3V7GX&gtm=45je6710h2v9201273917za200zb9221829625zd9221829625&_p=1782975063011&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&are=1&cid=1108163179.1782975065&frm=0&pscdl=noapi&rcb=17&sr=1280x800&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=115938465~115938468~119027224~119576881~119576885~119576891~119576895&sid=1782975064&sct=1&seg=0&dl=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fscroll-fade-list&dt=Scroll%20Fade%20List%20%7C%20Community%20Components%20%7C%2021st&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=3980",
+    "method": "POST",
+    "resourceType": "fetch",
+    "status": 204,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "failed": true,
+    "failureText": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/89737.78fbb79cb5f5ec27.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/larsen66/scroll-fade-list/default/bundle.1782932573161.html?theme=light",
+    "method": "GET",
+    "resourceType": "document",
+    "status": 200,
+    "headers": {
+      "referer": "https://21st.dev/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    }
+  },
+  {
+    "url": "https://21.up.railway.app/compile-css",
+    "method": "POST",
+    "resourceType": "fetch",
+    "status": 500,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "content-type": "text/plain;charset=UTF-8",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/api/trpc/users.isCurrentUserAdmin,demos.getWinnerBadgesByDemoIds,demos.getSimilarDemosFeed?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%221%22%3A%7B%22json%22%3A%7B%22demoIds%22%3A%5B16685%5D%7D%7D%2C%222%22%3A%7B%22json%22%3A%7B%22demoId%22%3A16685%2C%22componentId%22%3A8777%2C%22limit%22%3A24%2C%22direction%22%3A%22forward%22%7D%7D%7D",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "x-anon-id": "r746b8cohlmr35bgt2",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "x-trpc-source": "nextjs-react",
+      "trpc-accept": "application/jsonl",
+      "content-type": "application/json"
+    },
+    "failed": true,
+    "failureText": "net::ERR_ABORTED"
+  },
+  {
+    "url": "https://21st.dev/@dqnamo?_rsc=1usw7",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "rsc": "1",
+      "next-router-segment-prefetch": "/_tree",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "next-router-prefetch": "1",
+      "next-url": "/community/components/dqnamo/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36"
+    }
+  },
+  {
+    "url": "blob:https://21st.dev/29094c4d-80ee-4d49-a67c-03c1c8f735c1",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/v1/environment?__clerk_api_version=2025-11-10&_clerk_js_version=5.127.0",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/v1/client?__clerk_api_version=2025-11-10&_clerk_js_version=5.127.0",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FShanghai%26zh-CN%26Google%20Inc.%26Win32%26255%261280%26800%2632%2624%261280%26800%2610%26na&eci=3&event=%7B%7D&event_id=36eceda1-b66f-4c7e-bc0b-636d9a5e8a5c&integration=gtm-ad-manager&p_id=Twitter&p_user_id=0&pl_id=01fb234d-203e-45d7-9b9f-508aac4ea274&pt=Scroll%20Fade%20List%20%7C%20Community%20Components%20%7C%2021st&tw_document_href=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fscroll-fade-list&tw_iframe_status=0&tw_pid_src=1&twpid=tw.1782975065189.395976336880375096&txn_id=qwpt5&type=javascript&version=2.3.53",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FShanghai%26zh-CN%26Google%20Inc.%26Win32%26255%261280%26800%2632%2624%261280%26800%2610%26na&eci=3&event=%7B%7D&event_id=36eceda1-b66f-4c7e-bc0b-636d9a5e8a5c&integration=gtm-ad-manager&p_id=Twitter&p_user_id=0&pl_id=01fb234d-203e-45d7-9b9f-508aac4ea274&pt=Scroll%20Fade%20List%20%7C%20Community%20Components%20%7C%2021st&tw_document_href=https%3A%2F%2F21st.dev%2F%40dqnamo%2Fcomponents%2Fscroll-fade-list&tw_iframe_status=0&tw_pid_src=1&twpid=tw.1782975065189.395976336880375096&txn_id=qwpt5&type=javascript&version=2.3.53",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/psl/dist/psl.min.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/@dqnamo?_rsc=1fqla",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 200,
+    "headers": {
+      "rsc": "1",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "next-router-prefetch": "1",
+      "next-router-state-tree": "%5B%22%22%2C%7B%22children%22%3A%5B%22(marketplace)%22%2C%7B%22children%22%3A%5B%22community%22%2C%7B%22children%22%3A%5B%5B%22username%22%2C%22dqnamo%22%2C%22d%22%5D%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2C%22refetch%22%2Cfalse%5D%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2Cnull%2Cfalse%5D%7D%2Cnull%2Cnull%2Ctrue%5D",
+      "next-url": "/community/components/dqnamo/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18yd2Rnc3BrTjllNzJPQ3c4TXMzMGlDWVlLY08ifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://shadcnuikit.com/logo.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zN0VLQkJDUUVUanhuaWxhYUJUTzBiSkR3QmkifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://pbs.twimg.com/profile_images/2004061472645959682/xUb-jNGa_400x400.jpg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18ydUFxckNKVkZJUFpGMDQ1cUQ0NnBHeTh0VDIifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yeTBvckljaDhWbUFvT2FvejVkU3ZGUDZhaGkifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18yd3k0ZkVWRGkyb1p6b2FjeVN2ZlZad2IycDkifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/images/magicui.svg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18yeTRlVzBwaW81VzFyWWt0WWFpUDdtQmMxWnEifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yekFzdlBhQVN2bFB2ZVp5UmZ3dWhlaHFtZmoifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2xJxXqdwWohYrdd6fiMYrS9hbmO/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 0,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2y5Wd5l713ZIFYjX19aZXSyXd6b/avatar.svg+xml",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_3AIQiyVyd9sc3bDOSRLTIV7m12O/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIF.DlEsgQMWDY8H%252brCRFN2gFw%26pid%3DApi&f=1&ipt=0ce1930afd2b31200b5fd2637344f966d9e5b90126918f497cd35b835445d958",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 0,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://vucvdpamtrjkzmubwlts.supabase.co/storage/v1/object/public/users/user_2xffZsPH7trHq0L2RAacpvdoyXT/avatar.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zMkdpYXVWcm1sY0R0ZEh2Sk5NR3lGRDVnUkEifQ",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 0,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://pbs.twimg.com/profile_images/1863135999087505408/5qjunahh_400x400.jpg",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/scroll-fade-effect/demos/default/preview.1773282913237.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_bundui/text-gradient-scroll/default/preview.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/afridho.utama/stagger-list/default/preview.1778670680597.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/stacked-list/default/preview.1773675563534.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/shugar/scroller-1/default/preview.1752153815553.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/lovesickfromthe6ix/full-screen-scroll-fx/default/preview.1755782340506.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_2wy4fCMd9v4AsO2ag0ZtQ5yFYMW/immersive-scroll-gallery/default/preview.1747354637721.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_magicui/blur-fade/default/preview.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/tahermaxse/scroll-legend/default/preview.1751026311250.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/scroll-animation/default/preview.1750118212763.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_magicui/text-reveal/856/preview.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/animated-gradient/default/preview.1773077145252.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_bundui/scroll-progress-bar/1032/preview.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/easemize/motion-footer/default/preview.1774887325728.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/list-item/default/preview.1773298916583.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ruixen.ui/container-text-scroll/default/preview.1760178308971.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/user_3AIQiyVyd9sc3bDOSRLTIV7m12O/story-scroll/default/preview.1777906322091.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/smooth-scroll/default/preview.1749995378617.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/svg-follow-scroll/default/preview.1757692770066.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/dhileepkumargm/container-scrollaevihvyyyydhliigddrsxsfxagfu6d/default/preview.1759496807013.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/prashantsom75/scroll-morph-hero/default/preview.1765164297799.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ruixen.ui/scroll-text-rise/default/preview.1775799202240.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/ishamsu/smooth-scroll-hero/default/preview.1747142616016.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/image/fit=scale-down,width=640,quality=75,format=auto/https://cdn.21st.dev/larsen66/text-scroll-animation/default/preview.1757690897848.png",
+    "method": "GET",
+    "resourceType": "image",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "blob:https://21st.dev/87cd0fac-a1ee-4a3e-a9e7-9d8c9be0c4bb",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "accept": "*/*"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/framework_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/vendors_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/ui-common_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "origin": "https://cdn.21st.dev",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://cdn.21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://clerk.21st.dev/npm/@clerk/clerk-js@5.127.0/dist/subscriptionDetails_clerk.browser_636222_5.127.0.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/_next/static/chunks/app/(marketplace)/community/%5Busername%5D/loading-4a61fd7c1e69689f.js",
+    "method": "GET",
+    "resourceType": "script",
+    "status": 200,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://cdn.21st.dev/cdn-cgi/rum?",
+    "method": "POST",
+    "resourceType": "xhr",
+    "status": 204,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://cdn.21st.dev/larsen66/scroll-fade-list/default/bundle.1782932573161.html?theme=light",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://21st.dev/api/trpc/users.isCurrentUserAdmin?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D",
+    "method": "GET",
+    "resourceType": "fetch",
+    "status": 0,
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "x-anon-id": "r746b8cohlmr35bgt2",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+      "x-trpc-source": "nextjs-react",
+      "trpc-accept": "application/jsonl",
+      "content-type": "application/json"
+    }
+  }
+]

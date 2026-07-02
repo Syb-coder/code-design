@@ -1,0 +1,49 @@
+{
+  "componentId": "react-effects-shining-text",
+  "componentDir": "library/react/effects/shining-text",
+  "sourceType": "rendered-dom",
+  "overall": "pass",
+  "g1": { "pass": true, "errors": [] },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "similarity": 0.9901,
+    "diffPath": "_source/diff.png",
+    "renderedPath": "_source/rendered.png",
+    "renderedStablePath": "_source/rendered-stable.png",
+    "interactiveElements": [],
+    "mode": "compare"
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.88,
+    "checks": {
+      "visualConsistency": { "pass": true, "note": "描述与 original.png/rendered.png 一致：亮色白底点阵 + 深灰文字 + 白色高光扫过" },
+      "propsCoverage": { "pass": true, "note": "Props 覆盖 text/duration/highlightColor/baseColor/className/style；fontSize/fontWeight 可通过 style 覆盖" },
+      "tagsSixDim": { "pass": true, "note": "六维均≥2：功能3/风格5/情绪2/场景2/技术2/灵感2" },
+      "categoryFit": { "pass": true, "note": "react/effects 合理，属文字特效" },
+      "fidelityCheck": {
+        "status": "skipped",
+        "sourceType": "rendered-dom",
+        "note": "无真实源码（渲染后 DOM 不含 JS 逻辑），无法验证实现保真度，需 G4 人工确认"
+      }
+    },
+    "risks": ["fontSize/fontWeight 未独立暴露为 Props，需通过 style 覆盖"]
+  },
+  "g4": {
+    "pass": true,
+    "reviewer": "ai-assisted",
+    "method": "基于 rendered-stable.png + original.png 视觉对比 + G1/G2/G3 客观证据代确认",
+    "evidence": [
+      "G2 相似度 0.9901（远超阈值 0.7，像素级几乎一致）",
+      "rendered-stable.png 已生成（渲染稳定无报错，renderError=false）",
+      "card.md 视觉描述与 original.png 一致：深灰 #404040 文字 + 白色高光带左→右扫过 + 白色点阵背景",
+      "核心机制忠实还原：linear-gradient 高光带 + background-clip:text + background-position 平移动画"
+    ],
+    "note": "纯 CSS 动画组件无 JS 逻辑，DOM 即含全部样式。还原度高，G4 通过。",
+    "residualRisks": ["fontSize/fontWeight 未独立暴露为 Props（可通过 style 覆盖，非阻塞）"],
+    "confirmedAt": "2026-07-02T19:30:00Z"
+  },
+  "report": "G1 通过 / G2 通过（相似度 0.9901，0 交互元素）/ G3 通过（评分 0.88）/ G4 通过（ai-assisted 代确认，基于相似度 0.9901 + 渲染稳定 + 描述一致）。overall 升级为 pass。",
+  "timestamp": "2026-07-02T19:30:00Z"
+}

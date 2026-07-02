@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@hextaui/components/shining-text",
+  "finalUrl": "https://21st.dev/@hextaui/components/shining-text",
+  "title": "Shining Text | Community Components | 21st",
+  "fetchedAt": "2026-07-02T13:30:03.735Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "import { ShiningText } from \"@/components/ui/shining-text\"\n\nconst Demo = () => {\n    return (\n        <>\n            <ShiningText text={\"HextaAI is thinking...\"}/>\n        </>\n    )\n}\n\nexport {Demo}",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Shining Text",
+    "description": "Animate text with a shining effect.",
+    "url": "https://21st.dev/@hextaui/components/shining-text",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "HextaUI"
+    },
+    "dateCreated": "2025-05-01T09:26:53.853856",
+    "license": "mit"
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/hextaui/shining-text\""
+}

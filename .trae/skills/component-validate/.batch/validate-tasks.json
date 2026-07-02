@@ -1,0 +1,12 @@
+{
+  "total": 0,
+  "pending": 0,
+  "processing": 0,
+  "done": 0,
+  "failed": 0,
+  "tasks": [],
+  "generatedAt": "2026-07-01T06:45:11.704Z",
+  "skillPath": ".trae/skills/component-validate/SKILL.md",
+  "previewBaseUrl": "http://localhost:5173",
+  "previewServerHint": "G2 渲染校验需要预览应用运行中。请先启动: npm run dev（默认 http://localhost:5173）"
+}

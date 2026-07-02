@@ -1,0 +1,37 @@
+{
+  "url": "https://21st.dev/@dqnamo/components/model-selector",
+  "fetchedAt": "2026-07-02T07:20:13.441Z",
+  "steps": [
+    {
+      "step": "step-1-initial",
+      "html": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-1-initial.html",
+      "png": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-1-initial.png",
+      "note": "初始状态（未交互）"
+    },
+    {
+      "step": "step-2-dropdown",
+      "html": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-2-dropdown.html",
+      "png": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-2-dropdown.png",
+      "note": "点击模型按钮展开下拉"
+    },
+    {
+      "step": "step-3-preview",
+      "html": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-3-preview.html",
+      "png": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-3-preview.png",
+      "note": "hover 模型项展开预览卡片"
+    },
+    {
+      "step": "step-4-config",
+      "html": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-4-config.html",
+      "png": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-4-config.png",
+      "note": "切换 Reasoning=High 后 metric bars 变化"
+    },
+    {
+      "step": "step-5-search",
+      "html": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-5-search.html",
+      "png": "C:\\000\\code\\design\\library\\react\\business\\model-selector\\_source\\interactive\\step-5-search.png",
+      "note": "搜索 'gpt' 过滤模型列表"
+    }
+  ],
+  "iframeUrl": "https://cdn.21st.dev/larsen66/model-selector/default/bundle.1782935263971.html?theme=light"
+}

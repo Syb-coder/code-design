@@ -1,0 +1,55 @@
+{
+  "componentId": "react-effects-scroll-fade-list",
+  "componentDir": "library/react/effects/scroll-fade-list",
+  "sourceType": "rendered-dom",
+  "version": "v3",
+  "versionNote": "V3 修复字体颜色问题：ul 显式设置深色字体 rgb(15,15,15) + 16px + 系统字体，避免被项目全局暗色主题覆盖导致字体太淡且 fade 效果不可见",
+  "overall": "warn",
+  "g1": {
+    "pass": true,
+    "errors": []
+  },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "similarity": 0.9947,
+    "diffPath": "_source/diff.png",
+    "renderedPath": "_source/rendered.png",
+    "renderedStablePath": "_source/rendered-stable.png",
+    "interactiveElements": [],
+    "mode": "compare",
+    "sizeMismatch": true
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.93,
+    "checks": {
+      "visualConsistency": {
+        "pass": true,
+        "note": "card.md 视觉描述与 original.png / rendered.png 一致（相似度 0.9947）"
+      },
+      "propsCoverage": {
+        "pass": true,
+        "note": "card.md 列出 9 个 Props，覆盖 index.tsx 全部可配置项"
+      },
+      "tagsSixDim": {
+        "pass": true,
+        "note": "15 个 tags 覆盖六维各 ≥2"
+      },
+      "categoryFit": {
+        "pass": true,
+        "note": "react + effects 分类合理"
+      },
+      "fidelityCheck": {
+        "status": "skipped",
+        "sourceType": "rendered-dom",
+        "note": "V3 基于 iframe 编译后 JS 反推实现，样式与原组件逐项对齐：li color rgb(15,15,15)≈oklch(0.145)、fontSize 16px、fontFamily 系统字体、borderRadius 8px、padding 8px 12px。fade 机制对齐原组件（CSS 伪元素 ::before/::after + CSS 变量）。需 G4 人工滚动测试确认动态淡入淡出效果。"
+      }
+    },
+    "risks": [
+      "li 项的圆角/内边距样式硬编码，未作为 Props 暴露（非核心配置，可选优化）"
+    ]
+  },
+  "report": "V3 修复版：G1 通过 / G2 通过（相似度 0.9947）/ G3 通过（评分 0.93）。overall=warn（rendered-dom 模式强制 G4 人工确认）。",
+  "timestamp": "2026-07-02T16:00:00Z"
+}

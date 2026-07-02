@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+  "finalUrl": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+  "title": "Scroll Fade List | Community Components | 21st",
+  "fetchedAt": "2026-07-02T06:51:06.845Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "\"use client\";\n\nimport { ScrollFadeList } from \"@/components/ui/scroll-fade-list\";\n\nconst teams = [\n  { code: \"za\", flag: \"🇿🇦\", name: \"South Africa\" },\n  { code: \"ca\", flag: \"🇨🇦\", name: \"Canada\" },\n  { code: \"br\", flag: \"🇧🇷\", name: \"Brazil\" },\n  { code: \"jp\", flag: \"🇯🇵\", name: \"Japan\" },\n  { code: \"de\", flag: \"🇩🇪\", name: \"Germany\" },\n  { code: \"py\", flag: \"🇵🇾\", name: \"Paraguay\" },\n  { code: \"nl\", flag: \"🇳🇱\", name: \"Netherlands\" },\n  { code: \"ma\", flag: \"🇲🇦\", name: \"Morocco\" },\n  { code: \"ci\", flag: \"🇨🇮\", name: \"Ivory Coast\" },\n  { code: \"no\", flag: \"🇳🇴\", name: \"Norway\" },\n  { code: \"fr\", flag: \"🇫🇷\", name: \"France\" },\n  { code: \"se\", flag: \"🇸🇪\", name: \"Sweden\" },\n  { code: \"mx\", flag: \"🇲🇽\", name: \"Mexico\" },\n  { code: \"ec\", flag: \"🇪🇨\", name: \"Ecuador\" },\n  { code: \"en\", flag: \"🏴\", name: \"England\" },\n  { code: \"cd\", flag: \"🇨🇩\", name: \"DR Congo\" },\n  { code: \"be\", flag: \"🇧🇪\", name: \"Belgium\" },\n  { code: \"sn\", flag: \"🇸🇳\", name: \"Senegal\" },\n  { code: \"us\", flag: \"🇺🇸\", name: \"United States\" },\n  { code: \"ba\", flag: \"🇧🇦\", name: \"Bosnia and Herzegovina\" },\n  { code: \"es\", flag: \"🇪🇸\", name: \"Spain\" },\n  { code: \"at\", flag: \"🇦🇹\", name: \"Austria\" },\n  { code: \"pt\", flag: \"🇵🇹\", name: \"Portugal\" },\n  { code: \"hr\", flag: \"🇭🇷\", name: \"Croatia\" },\n  { code: \"ch\", flag: \"🇨🇭\", name: \"Switzerland\" },\n  { code: \"dz\", flag: \"🇩🇿\", name: \"Algeria\" },\n  { code: \"au\", flag: \"🇦🇺\", name: \"Australia\" },\n  { code: \"eg\", flag: \"🇪🇬\", name: \"Egypt\" },\n  { code: \"ar\", flag: \"🇦🇷\", name: \"Argentina\" },\n  { code: \"cv\", flag: \"🇨🇻\", name: \"Cabo Verde\" },\n  { code: \"co\", flag: \"🇨🇴\", name: \"Colombia\" },\n  { code: \"gh\", flag: \"🇬🇭\", name: \"Ghana\" },\n];\n\nexport default function Default() {\n  return (\n    <div className=\"flex min-h-screen w-full items-center justify-center bg-neutral-100 p-8\">\n      <div className=\"w-72\">\n        <ScrollFadeList\n          getKey={(team) => team.code}\n          items={teams}\n          renderItem={(team) => (\n            <span className=\"flex items-center gap-2\">\n              <span aria-hidden=\"true\">{team.flag}</span>\n              <span>{team.name}</span>\n            </span>\n          )}\n        />\n      </div>\n    </div>\n  );\n}\n",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Scroll Fade List",
+    "description": "A scrollable list with gradient fade edges that appear to signal there is more content above or below. The top and bottom fades grow and shrink based on scroll position (measured on scroll and via a ResizeObserver, batched with requestAnimationFrame), leaving a stable scrollbar gutter. It is fully generic over the item type via getKey/items/renderItem, with a configurable max fade height and a themeable background color. Dependency-free.",
+    "url": "https://21st.dev/@dqnamo/components/scroll-fade-list",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "dqnamo"
+    },
+    "dateCreated": "2026-07-01T19:00:10.330699",
+    "license": "mit"
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/dqnamo/scroll-fade-list\""
+}

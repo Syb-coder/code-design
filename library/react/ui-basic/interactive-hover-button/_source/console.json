@@ -1,0 +1,32 @@
+[
+  {
+    "type": "warning",
+    "text": "Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.",
+    "location": "https://21st.dev/_next/static/chunks/75597-790e52a86e0a1ceb.js"
+  },
+  {
+    "type": "debug",
+    "text": "No user identifier available",
+    "location": "https://21st.dev/_next/static/chunks/49607-7cbf2fa464d07a4e.js"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #2 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 414, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  },
+  {
+    "type": "log",
+    "text": "isDarkMode false",
+    "location": "https://cdn.21st.dev/bundled/969.html?theme=light"
+  },
+  {
+    "type": "log",
+    "text": "window.location.search ?theme=light",
+    "location": "https://cdn.21st.dev/bundled/969.html?theme=light"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #5 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 386, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  }
+]

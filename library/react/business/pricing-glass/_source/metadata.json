@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@uithefactory/components/pricing-glass",
+  "finalUrl": "https://21st.dev/@uithefactory/components/pricing-glass",
+  "title": "Pricing Glass | Community Components | 21st",
+  "fetchedAt": "2026-07-02T08:24:35.897Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "\"use client\";\n\nimport React, { useState } from \"react\";\nimport { PricingGlass } from \"@/components/ui/pricing-glass\";\n\n\ntype BgOption = {\n  name: string;\n  tw: string;\n  buttonClass: string;\n};\n\nconst BG_COLORS: BgOption[] = [\n  { name: \"Obsidian\", tw: \"bg-[#050505]\", buttonClass: \"bg-[#050505]\" },\n  { name: \"Midnight Cosmos\", tw: \"bg-[#0D0B14]\", buttonClass: \"bg-[#0D0B14]\" },\n  { name: \"Mariana Trench\", tw: \"bg-[#06101E]\", buttonClass: \"bg-[#06101E]\" },\n  { name: \"Dark Moss\", tw: \"bg-[#0A120D]\", buttonClass: \"bg-[#0A120D]\" },\n  { name: \"Volcanic Ash\", tw: \"bg-[#1A0B0B]\", buttonClass: \"bg-[#1A0B0B]\" }\n];\n\nconst DEMO_TIERS = [\n  {\n    name: \"Basic\",\n    priceMonthly: \"9\",\n    priceAnnual: \"7\",\n    description: \"Perfect for individuals and side projects.\",\n    features: [\"1 Workspace\", \"Basic Analytics\", \"Community Support\"]\n  },\n  {\n    name: \"Pro\",\n    priceMonthly: \"29\",\n    priceAnnual: \"24\",\n    description: \"For professionals and growing teams.\",\n    isPopular: true,\n    features: [\"Unlimited Workspaces\", \"Advanced Analytics\", \"Priority Support\", \"Custom Domains\"]\n  },\n  {\n    name: \"Ultra\",\n    priceMonthly: \"99\",\n    priceAnnual: \"79\",\n    description: \"Maximum power for massive scale.\",\n    features: [\"Unlimited Everything\", \"Predictive AI Insights\", \"24/7 Dedicated Support\", \"Custom Domains\", \"Biometric Security\"]\n  }\n];\n\nexport default function PricingGlassDemo() {\n  const [bgIndex, setBgIndex] = useState(0);\n\n  // Truco maestro: si hacen clic en cualquier sitio que no sea un botón, los lleva a tu web\n  const handleGlobalClick = (e: React.MouseEvent) => {\n    const target = e.target as HTMLElement;\n    // Evitamos abrir la web si están haciendo clic en un botón interactivo del componente\n    if (!target.closest('button')) {\n      window.open('https://uithefactory.com', '_blank');\n    }\n  };\n\n  return (\n    <div \n      onClick={handleGlobalClick}\n      className={`relative w-full min-h-[900px] overflow-hidden cursor-pointer ${BG_COLORS[bgIndex].tw} transition-colors duration-1000`}\n    >\n      \n      {/* Texto flotante explicativo */}\n      <div className=\"absolute bottom-4 left-4 z-50 text-white/40 text-[10px] uppercase tracking-widest font-mono border border-white/10 px-3 py-2 rounded-md bg-black/50 backdrop-blur pointer-events-none\">\n        Click anywhere to visit The UI Factory ↗\n      </div>\n\n      {/* Background Selector */}\n      <div className=\"absolute top-6 right-6 flex items-center gap-3 z-50 bg-black/40 backdrop-blur-xl p-2 rounded-full border border-white/10 shadow-2xl\">\n        <span className=\"text-white/60 text-[11px] font-bold tracking-wider uppercase px-2 pointer-events-none\">Test Backgrounds</span>\n        <div className=\"flex gap-2\">\n          {BG_COLORS.map((color, i) => (\n            <button\n              key={color.name}\n              onClick={() => setBgIndex(i)}\n              title={color.name}\n              className={`w-6 h-6 rounded-full transition-all duration-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] ${\n                bgIndex === i ? \"scale-110 ring-2 ring-white ring-offset-2 ring-offset-black\" : \"hover:scale-110 border border-white/20\"\n              } ${color.buttonClass}`}\n            />\n          ))}\n        </div>\n      </div>\n      \n      {/* Component Wrapper */}\n      <div className=\"w-full max-w-7xl mx-auto py-24 relative z-20\">\n        <PricingGlass tiers={DEMO_TIERS} />\n      </div>\n\n    </div>\n  );\n}\n",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Pricing Glass",
+    "description": " A hyper-premium 3-card pricing layout with deep glassmorphism, animated light beams, and interactive mouse-tracking physics.",
+    "url": "https://21st.dev/@uithefactory/components/pricing-glass",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "uithefactory"
+    },
+    "dateCreated": "2026-07-01T18:36:13.365764",
+    "license": ""
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/uithefactory/pricing-glass\""
+}

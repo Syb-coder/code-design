@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@dqnamo/components/model-selector",
+  "finalUrl": "https://21st.dev/@dqnamo/components/model-selector",
+  "title": "Model Selector Prompt | Community Components | 21st",
+  "fetchedAt": "2026-07-02T06:49:37.492Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 2500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "\"use client\";\n\nimport { useState } from \"react\";\nimport {\n  DEFAULT_LLM_MODELS,\n  ModelSelectorPrompt,\n  type ModelConfiguration,\n} from \"@/components/ui/model-selector\";\n\nexport default function Default() {\n  const [modelValue, setModelValue] = useState(\"claude-fable-5\");\n  const [configurations, setConfigurations] = useState<\n    Record<string, ModelConfiguration>\n  >({});\n  const [prompt, setPrompt] = useState(\"\");\n\n  return (\n    <div className=\"flex min-h-screen w-full items-center justify-center bg-neutral-100 p-8\">\n      <ModelSelectorPrompt\n        configurations={configurations}\n        models={DEFAULT_LLM_MODELS}\n        onConfigurationChange={(_, __, nextConfigurations) => {\n          setConfigurations(nextConfigurations);\n        }}\n        onModelChange={(model) => {\n          setModelValue(model.value);\n        }}\n        onPromptChange={setPrompt}\n        onSubmit={({ model, configuration, prompt: submittedPrompt }) => {\n          // eslint-disable-next-line no-console\n          console.log({ model: model.value, configuration, prompt: submittedPrompt });\n        }}\n        prompt={prompt}\n        value={modelValue}\n      />\n    </div>\n  );\n}\n",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Model Selector Prompt",
+    "description": "A benchmark-informed prompt composer with an advanced LLM model selector for comparing frontier models across capability, speed, context, and cost. The model dropdown is searchable; hovering a model opens a preview card with animated metric bars (intelligence, speed, context, cost) and inline reasoning/speed configuration that adjusts the metrics live. Includes provider marks, per-model configuration badges, a scroll-faded list, and a Send action. Built on Base UI Combobox + Preview Card.",
+    "url": "https://21st.dev/@dqnamo/components/model-selector",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "dqnamo"
+    },
+    "dateCreated": "2026-07-01T19:22:29.291226",
+    "license": "mit"
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/dqnamo/model-selector\""
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "warning",
+    "text": "Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.",
+    "location": "https://21st.dev/_next/static/chunks/75597-790e52a86e0a1ceb.js"
+  },
+  {
+    "type": "debug",
+    "text": "No user identifier available",
+    "location": "https://21st.dev/_next/static/chunks/49607-d860326525f72325.js"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #2 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 409, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  },
+  {
+    "type": "warning",
+    "text": "[.WebGL-0x75dc077d4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "location": "https://cdn.21st.dev/pulseawan/modern-login-signup/default/bundle.1782801552351.html?theme=light"
+  },
+  {
+    "type": "warning",
+    "text": "[.WebGL-0x75dc077d4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "location": "https://cdn.21st.dev/pulseawan/modern-login-signup/default/bundle.1782801552351.html?theme=light"
+  },
+  {
+    "type": "warning",
+    "text": "[.WebGL-0x75dc077d4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "location": "https://cdn.21st.dev/pulseawan/modern-login-signup/default/bundle.1782801552351.html?theme=light"
+  },
+  {
+    "type": "warning",
+    "text": "[.WebGL-0x75dc077d4000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+    "location": "https://cdn.21st.dev/pulseawan/modern-login-signup/default/bundle.1782801552351.html?theme=light"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #5 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 316, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  }
+]

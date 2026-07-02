@@ -1,0 +1,65 @@
+{
+  "componentId": "react-business-modern-login-signup",
+  "componentDir": "library/react/business/modern-login-signup",
+  "sourceType": "registry-source",
+  "overall": "pass",
+  "g1": {
+    "pass": true,
+    "errors": [],
+    "checks": [
+      "ts-compile",
+      "meta-schema (含 sourceType=registry-source 枚举校验)",
+      "card-frontmatter",
+      "blacklist",
+      "deps-consistency",
+      "restore-warning (非还原模式跳过)",
+      "source-missing (original-source.tsx 存在)"
+    ]
+  },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "similarity": 0.8694,
+    "threshold": 0.7,
+    "mode": "compare",
+    "sizeMismatch": true,
+    "interactiveElementsCount": 7,
+    "interactiveElements": [
+      { "tag": "button", "text": "Continue with Email", "role": "submit" },
+      { "tag": "button", "text": "Continue with Google", "role": "" },
+      { "tag": "button", "text": "Continue with GitHub", "role": "" },
+      { "tag": "button", "text": "Continue with Apple", "role": "" },
+      { "tag": "button", "text": "Sign Up", "role": "" },
+      { "tag": "a", "text": "Terms of Service", "role": "" },
+      { "tag": "a", "text": "Privacy Policy", "role": "" }
+    ],
+    "diffPath": "_source/diff.png",
+    "renderedPath": "_source/rendered.png",
+    "renderedStablePath": "_source/rendered-stable.png"
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.95,
+    "checks": {
+      "visualConsistency": { "pass": true, "note": "card.md 描述与 original.png/rendered.png 一致" },
+      "propsCoverage": { "pass": true, "note": "17 个 props 覆盖全部可配置项" },
+      "tagsSixDim": { "pass": true, "note": "六维均≥2（功能5/风格3/情绪2/场景3/技术5/灵感3）" },
+      "categoryFit": { "pass": true, "note": "react/business 合理" },
+      "fidelityCheck": {
+        "status": "passed",
+        "sourceType": "registry-source",
+        "checks": {
+          "coreTech": { "pass": true, "note": "ShaderMaterial+GLSL3+CustomBlending 完整保留，shader 代码一字不差；加载方式从动态 script CDN 改为 ESM import（L3 规范化）" },
+          "stateMgmt": { "pass": true, "note": "isLogin 双态切换完整保留，新增 email/name 受控 state 属表单增强" },
+          "interaction": { "pass": true, "note": "7 个交互入口与原始源码一致，切换按钮 onClick 保留" },
+          "props": { "pass": true, "note": "原始无 props → 净化版 17 props 全覆盖（L3 规范化）" }
+        }
+      }
+    },
+    "risks": ["sizeMismatch（original.png 与 rendered.png 尺寸不一致已裁剪，属可接受差异）"]
+  },
+  "report": "G1 通过（7项全过）/ G2 通过（相似度 0.8694，7个交互元素）/ G3 通过（评分 0.95，保真度 passed）",
+  "ingestedAt": "2026-07-02T00:00:00Z",
+  "ingestMode": "registry-source",
+  "originalSourceRetained": true
+}
