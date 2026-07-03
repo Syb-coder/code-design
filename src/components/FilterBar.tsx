@@ -15,6 +15,12 @@ const CAT_LABELS: Record<Category, string> = {
   visualization: '可视化',
 }
 
+/** 分类筛选顺序（按使用频率排序，高频在前），模块级常量避免每次渲染重建 */
+const CATEGORIES: Category[] = [
+  'button', 'form', 'navigation', 'layout', 'data-display',
+  'feedback', 'effects', '3d', 'business', 'visualization',
+]
+
 interface Props {
   category: Category | 'all'
   onCategoryChange: (v: Category | 'all') => void
@@ -22,7 +28,6 @@ interface Props {
 
 export default function FilterBar({ category, onCategoryChange }: Props) {
   const counts = getFilterCounts()
-  const cats: Category[] = ['button', 'form', 'navigation', 'layout', 'data-display', 'feedback', 'effects', '3d', 'business', 'visualization']
 
   return (
     <div className="filter-bar">
@@ -35,7 +40,7 @@ export default function FilterBar({ category, onCategoryChange }: Props) {
           >
             全部
           </button>
-          {cats.map(c => (
+          {CATEGORIES.map(c => (
             <button
               key={c}
               className={`filter-bar__pill ${category === c ? 'is-active' : ''}`}

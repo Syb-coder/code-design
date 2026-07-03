@@ -1,5 +1,5 @@
-import { lazy, Suspense, Component, ReactNode, useEffect, useRef, useState } from 'react'
-import { previewModules } from '../lib/scan-components'
+import { useEffect, useRef, useState } from 'react'
+import { PreviewLoader } from '../lib/preview-loader'
 import './ComponentPreview.css'
 
 interface Props {
@@ -13,28 +13,6 @@ interface Props {
    *   - true（全屏预览用）：画布尺寸=容器尺寸，组件按容器实际尺寸 1:1 渲染，字体清晰不模糊
    */
   fillContainer?: boolean
-}
-
-/** 加载失败时的简洁错误提示 */
-function PreviewError({ previewPath }: { previewPath: string }) {
-  const shortPath = previewPath.split('/').slice(-3).join('/')
-  return (
-    <div className="comp-preview-error">
-      预览不可用: {shortPath}
-    </div>
-  )
-}
-
-/** 错误边界：捕获 lazy import 失败，防止整页崩溃 */
-interface EBState { hasError: boolean }
-class PreviewErrorBoundary extends Component<{ children: ReactNode; previewPath: string }, EBState> {
-  state: EBState = { hasError: false }
-  static getDerivedStateFromError(): EBState { return { hasError: true } }
-  render() {
-    return this.state.hasError
-      ? <PreviewError previewPath={this.props.previewPath} />
-      : this.props.children
-  }
 }
 
 /**
@@ -56,15 +34,14 @@ const STAGE_WIDTH = 640
  * 这样无论组件自然尺寸多大（如完整登录页约 400×500），都能在卡片预览框（280×175）里
  * 完整显示且不变形。Three.js canvas 等绝对定位元素也随画布缩放。
  *
- * 替代了原 `import(/* @vite-ignore *\/ previewPath)` 实现（Vite 无法静态分析路径，
- * 浏览器原生 ESM 也无法加载本地文件），改为通过 scan-components.ts 中
- * import.meta.glob 预扫描的 previewModules 查找模块。
+ * 预览组件加载委托给 PreviewLoader（lib/preview-loader.tsx），
+ * 消除与 SandboxPage 的重复扫描/lazy 解析/ErrorBoundary 样板。
  *
- * 模块缺失时显示简洁错误提示，不会拖垮整页
+ * @param previewPath Vite glob key 格式的预览路径
+ * @param fillContainer 是否 1:1 填充容器（全屏模式）
  */
 export default function ComponentPreview({ previewPath, fillContainer = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const stageRef = useRef<HTMLDivElement>(null)
   const [scale, setScale] = useState(1)
   const [stageHeight, setStageHeight] = useState(400)
 
@@ -96,42 +73,26 @@ export default function ComponentPreview({ previewPath, fillContainer = false }:
     return () => ro.disconnect()
   }, [fillContainer])
 
-  const loader = previewModules[previewPath]
-
-  // 模块未在 import.meta.glob 扫描结果中：显示错误提示而不是抛错
-  if (!loader) {
-    return (
-      <PreviewErrorBoundary previewPath={previewPath}>
-        <PreviewError previewPath={previewPath} />
-      </PreviewErrorBoundary>
-    )
-  }
-
-  const PreviewComponent = lazy(() =>
-    (loader as () => Promise<Record<string, unknown>>)().then(mod => {
-      const Comp = mod.default || mod.Preview || mod.ComponentPreview
-      if (!Comp) throw new Error('No preview component found')
-      return { default: Comp as React.ComponentType }
-    })
-  )
-
   return (
-    <PreviewErrorBoundary previewPath={previewPath}>
-      <div ref={containerRef} className="comp-preview-container">
-        <div
-          ref={stageRef}
-          className="comp-preview-stage"
-          style={{
-            width: fillContainer ? '100%' : STAGE_WIDTH,
-            height: stageHeight,
-            transform: `scale(${scale})`,
+    <div ref={containerRef} className="comp-preview-container">
+      <div
+        className="comp-preview-stage"
+        style={{
+          width: fillContainer ? '100%' : STAGE_WIDTH,
+          height: stageHeight,
+          transform: `scale(${scale})`,
+        }}
+      >
+        <PreviewLoader
+          previewPath={previewPath}
+          loadingFallback={<div className="comp-preview-error">加载中...</div>}
+          errorFallback={() => {
+            // 提取末三段路径，缩短错误提示
+            const shortPath = previewPath.split('/').slice(-3).join('/')
+            return <div className="comp-preview-error">预览不可用: {shortPath}</div>
           }}
-        >
-          <Suspense fallback={<div className="comp-preview-error">加载中...</div>}>
-            <PreviewComponent />
-          </Suspense>
-        </div>
+        />
       </div>
-    </PreviewErrorBoundary>
+    </div>
   )
 }

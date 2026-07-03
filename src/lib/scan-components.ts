@@ -44,6 +44,102 @@ interface MetaJson {
 }
 
 /**
+ * card.md 字段标题候选词
+ * 中英文双语，按优先级排序，首个命中即采用
+ */
+const CARD_SECTION_ALIASES = {
+  description: ['视觉描述', 'Description'],
+  api: ['关键 API', 'Props', 'API'],
+  usage: ['最小使用示例', '使用示例', 'Usage'],
+  scenes: ['适用场景', '场景'],
+} as const
+
+/**
+ * 跳过 card.md 顶部 frontmatter（--- ... --- 块），返回剩余正文
+ * @param content card.md 原始字符串
+ */
+function stripFrontmatter(content: string): string {
+  if (!content.startsWith('---')) return content
+  const closeIdx = content.indexOf('---', 3)
+  return closeIdx >= 0 ? content.slice(closeIdx + 3) : content
+}
+
+/**
+ * 提取某个 ## 小节内容，遇到下一个 ## 或文件尾结束
+ * @param body 已剥离 frontmatter 的正文
+ * @param title 小节标题（不含 ## 前缀）
+ */
+function extractSection(body: string, title: string): string {
+  const re = new RegExp(`^##\\s+${title}\\s*\\n([\\s\\S]*?)(?=^##\\s|$(?![\\s\\S]))`, 'm')
+  const m = body.match(re)
+  return m ? m[1].trim() : ''
+}
+
+/**
+ * 按 alias 候选词依次尝试提取小节，首个命中即返回
+ * @param body 已剥离 frontmatter 的正文
+ * @param aliases 标题候选词数组
+ */
+function extractSectionByAliases(body: string, aliases: readonly string[]): string {
+  for (const alias of aliases) {
+    const content = extractSection(body, alias)
+    if (content) return content
+  }
+  return ''
+}
+
+/**
+ * 解析 markdown 表格行为 PropDef
+ * 表格格式：| name | type | default | desc |
+ * @param line 表格行原始字符串
+ * @returns PropDef 或 null（表头/分隔行/不匹配返回 null）
+ */
+function parsePropRow(line: string): PropDef | null {
+  const m = line.match(/^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]*?)\s*\|\s*$/)
+  if (!m) return null
+  const name = m[1].trim()
+  // 跳过表头与分隔行（如 "Prop" 或 "---" / ":---"）
+  if (name === 'Prop' || name === '名称' || /^[-:\s]+$/.test(name)) return null
+  return {
+    name,
+    type: m[2].trim(),
+    defaultValue: m[3].trim() || undefined,
+    description: m[4].trim(),
+  }
+}
+
+/**
+ * 从 markdown 表格段解析 Props 列表
+ * @param apiSection 关键 API 小节内容
+ */
+function parsePropsTable(apiSection: string): PropDef[] {
+  return apiSection
+    .split('\n')
+    .map(parsePropRow)
+    .filter((p): p is PropDef => p !== null)
+}
+
+/**
+ * 从使用示例小节提取首个代码块内容
+ * @param usageSection 使用示例小节内容
+ */
+function extractFirstCodeBlock(usageSection: string): string {
+  const codeMatch = usageSection.match(/```[a-zA-Z]*\n([\s\S]*?)```/)
+  return codeMatch ? codeMatch[1].trim() : ''
+}
+
+/**
+ * 从适用场景小节按列表项（- 或 *）提取场景描述
+ * @param scenesSection 适用场景小节内容
+ */
+function parseSceneList(scenesSection: string): string[] {
+  return scenesSection
+    .split('\n')
+    .map(l => l.match(/^\s*[-*]\s+(.+?)\s*$/)?.[1])
+    .filter((x): x is string => !!x)
+}
+
+/**
  * 解析 card.md 提取 AI 卡片信息
  *
  * card.md 结构（参考 docs/ai-card-template.md）：
@@ -57,61 +153,17 @@ interface MetaJson {
  *   ## 适用场景（列表）
  *
  * @param content card.md 原始字符串
- * @param meta 元数据，用于在 card.md 缺失字段时兜底
+ * @param meta 元数据（当前未使用，保留用于未来字段兜底扩展）
  */
 function parseCardMd(content: string, meta: MetaJson): AICard {
-  // 跳过 frontmatter（首个 --- ... --- 块）
-  let body = content
-  if (body.startsWith('---')) {
-    const closeIdx = body.indexOf('---', 3)
-    if (closeIdx >= 0) body = body.slice(closeIdx + 3)
-  }
-
-  /** 提取某个 ## 小节内容，遇到下一个 ## 或文件尾结束 */
-  function extractSection(title: string): string {
-    const re = new RegExp(`^##\\s+${title}\\s*\\n([\\s\\S]*?)(?=^##\\s|$(?![\\s\\S]))`, 'm')
-    const m = body.match(re)
-    return m ? m[1].trim() : ''
-  }
-
-  // 视觉描述 → description
-  const description = extractSection('视觉描述') || extractSection('Description') || ''
-
-  // 关键 API 表格 → props
-  const apiSection = extractSection('关键 API') || extractSection('Props') || extractSection('API')
-  const props: PropDef[] = []
-  for (const line of apiSection.split('\n')) {
-    // 匹配 | name | type | default | desc | 形式
-    const m = line.match(/^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]*?)\s*\|\s*$/)
-    if (!m) continue
-    const name = m[1].trim()
-    // 跳过表头与分隔行（如 "Prop" 或 "---" / ":---"）
-    if (name === 'Prop' || name === '名称' || /^[-:\s]+$/.test(name)) continue
-    props.push({
-      name,
-      type: m[2].trim(),
-      defaultValue: m[3].trim() || undefined,
-      description: m[4].trim(),
-    })
-  }
-
-  // 最小使用示例 → usageExample（取首个代码块）
-  const usageSection = extractSection('最小使用示例') || extractSection('使用示例') || extractSection('Usage')
-  const codeMatch = usageSection.match(/```[a-zA-Z]*\n([\s\S]*?)```/)
-  const usageExample = codeMatch ? codeMatch[1].trim() : ''
-
-  // 适用场景 → applicableScenes（按 - 列表提取）
-  const scenesSection = extractSection('适用场景') || extractSection('场景')
-  const applicableScenes = scenesSection
-    .split('\n')
-    .map(l => l.match(/^\s*[-*]\s+(.+?)\s*$/)?.[1])
-    .filter((x): x is string => !!x)
+  void meta // 当前未使用，显式标记避免 lint 警告，保留参数以维持签名稳定性
+  const body = stripFrontmatter(content)
 
   return {
-    description,
-    props,
-    usageExample,
-    applicableScenes,
+    description: extractSectionByAliases(body, CARD_SECTION_ALIASES.description),
+    props: parsePropsTable(extractSectionByAliases(body, CARD_SECTION_ALIASES.api)),
+    usageExample: extractFirstCodeBlock(extractSectionByAliases(body, CARD_SECTION_ALIASES.usage)),
+    applicableScenes: parseSceneList(extractSectionByAliases(body, CARD_SECTION_ALIASES.scenes)),
   }
 }
 

@@ -1,7 +1,17 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { components } from '../lib/mock-data'
+import { useToast, useClipboard, useEscapeKey } from '../lib/hooks'
 import ComponentPreview from '../components/ComponentPreview'
+import DetailToast from '../components/detail/DetailToast'
+import DetailFullscreen from '../components/detail/DetailFullscreen'
+import {
+  BackIcon,
+  CopyIcon,
+  CopyExampleIcon,
+  FullscreenIcon,
+  ExternalLinkIcon,
+} from '../components/icons'
 import './DetailPage.css'
 
 export default function DetailPage() {
@@ -10,42 +20,27 @@ export default function DetailPage() {
 
   const component = components.find(c => c.id === idParam)
 
-  const [toastVisible, setToastVisible] = useState(false)
-  const [toastMsg, setToastMsg] = useState('')
+  // 局部 UI 状态（原 DetailPage 拆出，职责清晰）
   const [activeVariant, setActiveVariant] = useState(0)
   const [activeTab, setActiveTab] = useState<'card' | 'source'>('card')
-  // 全屏预览 Modal 开关
   const [fullscreenOpen, setFullscreenOpen] = useState(false)
 
-  // ESC 键关闭全屏 Modal
-  useEffect(() => {
-    if (!fullscreenOpen) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setFullscreenOpen(false)
-    }
-    window.addEventListener('keydown', onKey)
-    // 防止背景滚动
-    document.body.style.overflow = 'hidden'
-    return () => {
-      window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [fullscreenOpen])
+  // 通过 hooks 复用副作用逻辑（原内联在 DetailPage 中）
+  const { visible: toastVisible, message: toastMsg, showToast } = useToast()
+  const { copyToClipboard } = useClipboard(showToast)
+  useEscapeKey(fullscreenOpen, () => setFullscreenOpen(false))
 
-  const showToast = useCallback((msg: string) => {
-    setToastMsg(msg)
-    setToastVisible(true)
-    setTimeout(() => setToastVisible(false), 2500)
-  }, [])
-
-  const copyToClipboard = useCallback(async (text: string, label: string) => {
-    try {
-      await navigator.clipboard.writeText(text)
-      showToast(`${label}已复制到剪贴板`)
-    } catch {
-      showToast('复制失败，请手动复制')
-    }
-  }, [showToast])
+  // 全屏预览内容渲染函数，避免重复 JSX
+  const renderPreview = useCallback(
+    (fillContainer = false) => (
+      <ComponentPreview
+        previewPath={component?.previewPath ?? ''}
+        componentId={component?.id ?? ''}
+        fillContainer={fillContainer}
+      />
+    ),
+    [component?.previewPath, component?.id],
+  )
 
   if (!component) {
     return (
@@ -71,9 +66,7 @@ export default function DetailPage() {
       {/* 顶部导航 */}
       <nav className="detail-page__nav">
         <button className="detail-page__back" onClick={() => navigate('/')}>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <BackIcon size={16} />
           返回
         </button>
         <div className="detail-page__breadcrumb">
@@ -88,20 +81,14 @@ export default function DetailPage() {
             className="detail-page__action-btn"
             onClick={() => copyToClipboard(component.sourcePath, '源码路径')}
           >
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <rect x="4" y="4" width="9" height="9" rx="2" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M10 4V2.5A1.5 1.5 0 008.5 1h-6A1.5 1.5 0 001 2.5v6A1.5 1.5 0 002.5 10H4" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
+            <CopyIcon size={14} />
             复制路径
           </button>
           <button
             className="detail-page__action-btn"
             onClick={() => copyToClipboard(component.card.usageExample, '使用示例')}
           >
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M5 3h6a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M4 9V4.5A1.5 1.5 0 015.5 3H10" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
+            <CopyExampleIcon size={14} />
             复制示例
           </button>
         </div>
@@ -112,10 +99,7 @@ export default function DetailPage() {
         <section className="detail-page__preview-section">
           <div className="detail-page__preview-container">
             <div className="detail-page__preview-frame">
-              <ComponentPreview
-                previewPath={component.previewPath}
-                componentId={component.id}
-              />
+              {renderPreview()}
               {/* 全屏按钮：悬浮在预览框右上角 */}
               <button
                 className="detail-page__fullscreen-btn"
@@ -123,9 +107,7 @@ export default function DetailPage() {
                 title="全屏预览"
                 aria-label="全屏预览"
               >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 6V2.5A.5.5 0 012.5 2H6M10 2h3.5a.5.5 0 01.5.5V6M14 10v3.5a.5.5 0 01-.5.5H10M6 14H2.5a.5.5 0 01-.5-.5V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                <FullscreenIcon size={16} />
               </button>
             </div>
             {component.variants && component.variants.length > 0 && (
@@ -230,10 +212,7 @@ export default function DetailPage() {
                   className="detail-page__copy-code"
                   onClick={() => copyToClipboard(component.card.usageExample, '代码')}
                 >
-                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                    <rect x="4" y="4" width="9" height="9" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M10 4V2.5A1.5 1.5 0 008.5 1h-6A1.5 1.5 0 001 2.5v6A1.5 1.5 0 002.5 10H4" stroke="currentColor" strokeWidth="1.5" />
-                  </svg>
+                  <CopyIcon size={12} />
                   复制
                 </button>
 
@@ -292,11 +271,7 @@ export default function DetailPage() {
                       rel="noopener noreferrer"
                       title="在新标签页打开源组件"
                     >
-                      <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <path d="M5 2h7v7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M12 2L6 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M10 8v3.5A1.5 1.5 0 018.5 13h-6A1.5 1.5 0 011 11.5v-6A1.5 1.5 0 012.5 4H6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      <ExternalLinkIcon size={12} aria-hidden="true" />
                       新标签打开
                     </a>
                   </div>
@@ -335,44 +310,17 @@ export default function DetailPage() {
         </aside>
       </div>
 
-      {/* 全屏预览 Modal：点击全屏按钮打开，ESC 或返回按钮关闭 */}
-      {fullscreenOpen && (
-        <div className="detail-page__fullscreen" role="dialog" aria-modal="true" aria-label="全屏预览">
-          {/* 顶部返回栏 */}
-          <div className="detail-page__fullscreen-bar">
-            <button
-              className="detail-page__fullscreen-back"
-              onClick={() => setFullscreenOpen(false)}
-              title="返回详情页"
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              返回
-            </button>
-            <span className="detail-page__fullscreen-title">{component.name}</span>
-          </div>
-          {/* 全屏预览区：组件 1:1 渲染 */}
-          <div className="detail-page__fullscreen-stage">
-            <ComponentPreview
-              previewPath={component.previewPath}
-              componentId={component.id}
-              fillContainer
-            />
-          </div>
-        </div>
-      )}
+      {/* 全屏预览 Modal：ESC 关闭由 useEscapeKey hook 处理 */}
+      <DetailFullscreen
+        open={fullscreenOpen}
+        componentName={component.name}
+        onClose={() => setFullscreenOpen(false)}
+      >
+        {renderPreview(true)}
+      </DetailFullscreen>
 
       {/* Toast 通知 */}
-      {toastVisible && (
-        <div className="detail-page__toast" role="alert">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M4.5 7l2 2 3-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          {toastMsg}
-        </div>
-      )}
+      <DetailToast visible={toastVisible} message={toastMsg} />
     </div>
   )
 }

@@ -3,6 +3,9 @@ import { ComponentMeta } from '../lib/types'
 import ComponentPreview from './ComponentPreview'
 import './ComponentCard.css'
 
+/** 标签显示上限：列表视图展示更多标签，网格视图更紧凑 */
+const TAG_LIMITS: Record<'grid' | 'list', number> = { grid: 4, list: 6 }
+
 interface Props {
   component: ComponentMeta
   viewMode: 'grid' | 'list'
@@ -12,6 +15,8 @@ export default function ComponentCard({ component, viewMode }: Props) {
   const navigate = useNavigate()
   const { id, name, techStack, category, tags, variants, dependencies, source, previewPath } = component
   const variantCount = variants?.length || 0
+  // 标签上限按视图模式取，避免多处重复三元表达式
+  const tagLimit = TAG_LIMITS[viewMode]
 
   return (
     <div
@@ -41,11 +46,11 @@ export default function ComponentCard({ component, viewMode }: Props) {
         </div>
         <p className="comp-card__desc">{component.card.description}</p>
         <div className="comp-card__tags">
-          {tags.slice(0, viewMode === 'list' ? 6 : 4).map(tag => (
+          {tags.slice(0, tagLimit).map(tag => (
             <span key={tag} className="comp-card__tag">{tag}</span>
           ))}
-          {tags.length > (viewMode === 'list' ? 6 : 4) && (
-            <span className="comp-card__tag comp-card__tag--more">+{tags.length - (viewMode === 'list' ? 6 : 4)}</span>
+          {tags.length > tagLimit && (
+            <span className="comp-card__tag comp-card__tag--more">+{tags.length - tagLimit}</span>
           )}
         </div>
         {viewMode === 'list' && (
