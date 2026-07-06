@@ -1,0 +1,33 @@
+{
+  "id": "react-effects-liquid-morph-floating-menu",
+  "name": "Liquid Morph Floating Menu",
+  "techStack": "react",
+  "styling": "inline-style",
+  "animation": "framer-motion",
+  "sourceType": "pasted-code",
+  "category": "effects",
+  "tags": [
+    "menu",
+    "nav",
+    "floating",
+    "button",
+    "minimal",
+    "morph",
+    "organic",
+    "playful",
+    "energetic",
+    "hero",
+    "dashboard",
+    "framer-motion",
+    "css-transition",
+    "fluid",
+    "futuristic"
+  ],
+  "dependencies": ["framer-motion"],
+  "fonts": ["Trobika", "Bebas Neue", "Aeonik TRIAL", "Inter"],
+  "source": "21st.dev",
+  "sourceUrl": "https://21st.dev/@aayush-duhan/components/liquid-morph-floating-menu",
+  "author": "aayush-duhan",
+  "createdAt": "2026-07-03",
+  "updatedAt": "2026-07-03"
+}

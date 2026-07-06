@@ -1,0 +1,23 @@
+/**
+ * HeroUI v3 全局样式入口
+ *
+ * Tailwind v4 + @heroui/styles 集成：
+ *   1. @import "tailwindcss" 启用 Tailwind v4 引擎（@apply / @theme / @utility 等指令）
+ *   2. @import "@heroui/styles" 引入 HeroUI 完整样式：
+ *      - Tailwind 基础样式
+ *      - HeroUI 组件样式（含 @apply 指令，需 Tailwind 引擎编译）
+ *      - HeroUI 工具类
+ *      - 默认主题变量（light/dark）
+ *      - tw-animate-css 动画工具
+ *
+ * 依赖：
+ *   - tailwindcss v4+（项目已装）
+ *   - @tailwindcss/vite（vite.config.ts 已配置插件）
+ *   - @heroui/styles（项目已装）
+ *
+ * 注意：本文件需在 main.tsx 中 import，确保 Tailwind 引擎在应用启动时编译
+ *       所有 @apply 指令和 CSS 变量。
+ */
+
+@import "tailwindcss";
+@import "@heroui/styles";

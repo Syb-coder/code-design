@@ -1,0 +1,69 @@
+{
+  "componentId": "react-three-magic-dust-shader",
+  "componentDir": "library/react/three/magic-dust-shader",
+  "sourceType": "pasted-code",
+  "overall": "pass",
+  "g1": {
+    "pass": true,
+    "errors": []
+  },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "mode": "render-only",
+    "renderedPath": "_source/rendered.png",
+    "renderedStablePath": "_source/rendered-stable.png",
+    "interactiveElements": []
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.95,
+    "checks": {
+      "visualConsistency": {
+        "pass": true,
+        "note": "card.md 描述与源码逻辑一致：白色粒子聚合形成文字/几何体，AdditiveBlending 发光，文字态旋转吸附 + 几何体态自转"
+      },
+      "propsCoverage": {
+        "pass": true,
+        "note": "card.md 列出全部 8 个 Props，与 MagicDustProps 接口完全一致"
+      },
+      "tagsSixDim": {
+        "pass": true,
+        "note": "六维均覆盖≥2：功能3/风格2/情绪2/场景2/技术4/灵感2，总数15"
+      },
+      "categoryFit": {
+        "pass": true,
+        "note": "react + three 合理，组件用 React Three Fiber + Three.js"
+      },
+      "fidelityCheck": {
+        "status": "passed",
+        "sourceType": "pasted-code",
+        "checks": {
+          "coreTech": { "pass": true, "note": "R3F Canvas/useFrame + GLSL ShaderMaterial + Three.js Points 保留" },
+          "stateMgmt": { "pass": true, "note": "useState 懒初始化预计算 + useRef 状态机 + useFrame 帧循环保留" },
+          "interaction": { "pass": true, "note": "纯展示组件无交互，与 G2 探测 0 个交互元素一致" },
+          "props": { "pass": true, "note": "8 个 Props 全部保留，默认值一致" }
+        }
+      }
+    },
+    "risks": ["particleColor 仅初始化时同步，运行时修改不会更新粒子颜色（已在 card.md 实现说明标注）"]
+  },
+  "purificationChanges": [
+    "移除 \"use client\"（Next.js 指令，Vite 项目不需要）",
+    "移除未使用的 React 默认 import（React 19 不需要）",
+    "targets 数组加类型注解 TargetData[]（原为隐式 any[]，TS strict 报错）",
+    "西班牙语注释翻译为中文（原 RESPONSIVE EXACTO 等注释）",
+    "添加文件头注释（来源/作者/入库日期/实现说明）",
+    "为所有函数/组件添加 JSDoc 中文注释（参数/返回值/职责）"
+  ],
+  "ingestAdaptations": [
+    "Canvas 添加 gl={{ alpha: false, preserveDrawingBuffer: true }} —— alpha:false 让 canvas 不透明（黑底），AdditiveBlending 粒子叠加可见（默认 alpha:true 下 AdditiveBlending 在透明背景上合成异常导致粒子不可见）；preserveDrawingBuffer:true 保证截图工具能捕获渲染结果（G2 校验必需）",
+    "uSize 计算 window.innerWidth → state.size.width —— 沙箱/iframe/卡片缩略图中 canvas 尺寸 ≠ window 视口尺寸，用 R3F 内部 size 才准确",
+    "<points frustumCulled={false}> —— 粒子目标位置随 sequence 切换动态变化，boundingSphere 仅按 position 属性（散开云团）计算，聚合后粒子可能汇聚到 boundingSphere 之外被视锥剔除，导致整个 Points 对象不可见"
+  ],
+  "viteConfigChanges": [
+    "vite.config.ts 添加 resolve.dedupe: ['react', 'react-dom', 'scheduler'] —— 预防 @react-three/fiber / @heroui/react 等依赖传递引入自己的 React 副本导致 Invalid hook call 错误"
+  ],
+  "report": "G1 通过（0 errors）/ G2 通过（render-only 模式，无渲染错误，0 交互元素，修复后粒子可见 nonBlack=15005 像素）/ G3 通过（评分 0.95，保真度 passed，所有核心逻辑保留；风险：particleColor 运行时不更新，已在卡片标注）/ G4 人工确认通过",
+  "timestamp": "2026-07-04T18:38:00Z"
+}

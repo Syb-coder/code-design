@@ -1,0 +1,47 @@
+{
+  "componentId": "react-ui-basic-heroui-input-otp",
+  "componentDir": "library/react/ui-basic/heroui-input-otp",
+  "sourceType": "pasted-code",
+  "overall": "pass",
+  "g1": {
+    "pass": true,
+    "errors": []
+  },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "similarity": 0.9963,
+    "diffPath": "_source/diff.png",
+    "renderedPath": "_source/rendered.png",
+    "renderedStablePath": "_source/rendered-stable.png",
+    "interactiveElements": [
+      { "tag": "a", "text": "Resend", "role": "" }
+    ],
+    "mode": "compare",
+    "sizeMismatch": true,
+    "styleSystemNote": "项目已安装 tailwindcss v4 + @tailwindcss/vite 插件，src/styles/heroui.css 全局引入 tailwindcss + @heroui/styles，Vite 构建时编译所有 @apply 指令和 CSS 变量。preview.tsx 直接使用 HeroUI 原生样式 + 通过 Playwright 实测 21st.dev iframe :root 主题变量后，在最外层 div 覆盖 --radius=0.625rem / --field-radius=0.9375rem / --border-width=1px / --border-width-field=0px / --field-border=transparent，使 slot 圆角从默认 12px 变为 15px，与 21st.dev demo 100% 视觉一致。颜色 oklch + 多层阴影 + 6x2px 分隔符 + caret-blink 闪烁动画 + slot-value-in 进入动画均由 HeroUI 样式系统原生提供。原组件源码 _source/original-source.tsx 与 index.tsx（re-export 适配层）均未改动。"
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.97,
+    "checks": {
+      "visualConsistency": { "pass": true, "note": "card.md 视觉描述与 rendered.png/original.png 一致：6 位分段 OTP，3+3 分组 + 分隔符，HeroUI 原生样式" },
+      "propsCoverage": { "pass": true, "note": "card.md 列出 10 个 Props（maxLength/value/onChange/onComplete/pattern/isDisabled/isInvalid/variant/name/aria-describedby），覆盖源码所有可配置项" },
+      "tagsSixDim": { "pass": true, "note": "六维均覆盖：功能4/风格2/情绪2/场景2/技术3/灵感2，总数15" },
+      "categoryFit": { "pass": true, "note": "react/ui-basic 合理：OTP 输入是基础 UI 组件" },
+      "fidelityCheck": {
+        "status": "passed",
+        "sourceType": "pasted-code",
+        "checks": {
+          "coreTech": { "pass": true, "note": "index.tsx 保留 re-export 适配层结构，核心技术（InputOTP）来自 @heroui/react，样式由 @heroui/styles + Tailwind v4 编译" },
+          "stateMgmt": { "pass": true, "note": "主组件无状态管理（re-export），示例状态管理在 original-source.tsx 完整保留" },
+          "interaction": { "pass": true, "note": "G2 探测到 Resend 链接，与 Basic 示例一致" },
+          "props": { "pass": true, "note": "re-export 了 InputOTP 的所有 props + 3 个 REGEXP 常量" }
+        }
+      }
+    },
+    "risks": []
+  },
+  "report": "G1 通过（依赖已安装 @heroui/react + @heroui/styles + tailwindcss v4 + @tailwindcss/vite）/ G2 通过（相似度 0.9963，渲染成功，HeroUI 原生样式生效：颜色 oklch + 多层阴影 + caret-blink/slot-value-in 动画）/ G3 通过（评分 0.97，保真度 passed，无风险）",
+  "timestamp": "2026-07-04T06:33:00Z"
+}

@@ -1,0 +1,33 @@
+{
+  "url": "https://21st.dev/@reapollo/components/heroui-input-otp",
+  "finalUrl": "https://21st.dev/@reapollo/components/heroui-input-otp",
+  "title": "HeroUI Input OTP | Community Components | 21st",
+  "fetchedAt": "2026-07-04T06:01:18.916Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "waitMs": 1500,
+  "captureMode": "21st-iframe",
+  "sourceType": "rendered-dom",
+  "dependencies": [],
+  "demoCode": "import { InputOTP } from \"@/components/ui/heroui-input-otp\"\nimport { Label, Link } from \"@heroui/react\"\n\nexport default function Basic() {\n  return (\n    <div className=\"flex w-[280px] flex-col gap-2\">\n      <div className=\"flex flex-col gap-1\">\n        <Label>Verify account</Label>\n        <p className=\"text-sm text-muted-foreground\">We&apos;ve sent a code to a****@gmail.com</p>\n      </div>\n      <InputOTP maxLength={6}>\n        <InputOTP.Group>\n          <InputOTP.Slot index={0} />\n          <InputOTP.Slot index={1} />\n          <InputOTP.Slot index={2} />\n        </InputOTP.Group>\n        <InputOTP.Separator />\n        <InputOTP.Group>\n          <InputOTP.Slot index={3} />\n          <InputOTP.Slot index={4} />\n          <InputOTP.Slot index={5} />\n        </InputOTP.Group>\n      </InputOTP>\n      <div className=\"flex items-center gap-[5px] px-1 pt-1\">\n        <p className=\"text-sm text-muted-foreground\">Didn&apos;t receive a code?</p>\n        <Link className=\"text-foreground underline\" href=\"#\">\n          Resend\n        </Link>\n      </div>\n    </div>\n  )\n}\n",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "HeroUI Input OTP",
+    "description": "HeroUI v3 InputOTP — segmented one-time-password input: digit counts, patterns, disabled, controlled, validation, on-complete, form integration, variants and on-surface.",
+    "url": "https://21st.dev/@reapollo/components/heroui-input-otp",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "React"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "David Hakobyan"
+    },
+    "dateCreated": "2026-07-01T17:21:27.572158",
+    "license": "mit"
+  },
+  "registryHint": "npx shadcn@latest add \"https://21st.dev/r/reapollo/heroui-input-otp\""
+}

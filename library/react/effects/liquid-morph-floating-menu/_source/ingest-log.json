@@ -1,0 +1,51 @@
+{
+  "componentId": "react-effects-liquid-morph-floating-menu",
+  "componentDir": "library/react/effects/liquid-morph-floating-menu",
+  "sourceType": "pasted-code",
+  "overall": "pass",
+  "g1": {
+    "pass": true,
+    "errors": []
+  },
+  "g2": {
+    "pass": true,
+    "renderError": false,
+    "mode": "render-only",
+    "renderedPath": "library/react/effects/liquid-morph-floating-menu/_source/rendered.png",
+    "renderedStablePath": "library/react/effects/liquid-morph-floating-menu/_source/rendered-stable.png",
+    "interactiveElements": [
+      { "tag": "button", "text": "Home", "role": "" },
+      { "tag": "button", "text": "Works", "role": "" },
+      { "tag": "button", "text": "Contact", "role": "" }
+    ]
+  },
+  "g3": {
+    "pass": true,
+    "score": 0.92,
+    "checks": {
+      "visualConsistency": { "pass": true, "note": "card.md 描述与代码逻辑吻合，G2 渲染无报错，fixed 定位正确（left:640px, bottom:40px, 菜单 565,712 居中底部）" },
+      "propsCoverage": { "pass": true, "note": "核心 props（items/menuLabel）覆盖完整" },
+      "tagsSixDim": { "pass": true, "note": "15 个标签，六维均覆盖（功能4/风格3/情绪2/场景2/技术2/灵感2）" },
+      "categoryFit": { "pass": true, "note": "react + effects 合理，核心特色是液态变形动画" },
+      "fidelityCheck": {
+        "status": "passed",
+        "sourceType": "pasted-code",
+        "checks": {
+          "coreTech": { "pass": true, "note": "Framer Motion 液态变形 + CSS transition 字符 stagger + animatingRef 防抖全部保留" },
+          "stateMgmt": { "pass": true, "note": "isOpen/hovered/animatingRef/pendingLeaveRef/containerRef 全部保留" },
+          "interaction": { "pass": true, "note": "5 类交互全部保留，G2 探测 3 button 与原作菜单项一致" },
+          "props": { "pass": true, "note": "items 保留，新增 menuLabel 提取硬编码文案（增强）" }
+        }
+      }
+    },
+    "risks": ["颜色/尺寸/时长为模块常量，未通过 props 暴露，主题定制需改源码"]
+  },
+  "fixes": [
+    "安装 framer-motion 依赖（项目原未安装）",
+    "清除 Vite .vite 缓存 + 重启 dev server（修复 504 Outdated Optimize Dep 导致 framer-motion 未加载）",
+    "Tailwind 类名全部转为 inline style（本项目未集成 Tailwind，原类名无效导致 fixed/bottom-10/left-1/2 等定位失效）",
+    "preview.tsx 添加 transform:translateZ(0) 创建包含块，确保 fixed 在卡片缩略图场景相对容器定位"
+  ],
+  "report": "G1 通过 / G2 通过（render-only，3 个可交互元素，fixed 定位正确，描边严格保留原作 border 实现）/ G3 通过（评分 0.92，保真度 passed）",
+  "timestamp": "2026-07-04T06:30:00Z"
+}

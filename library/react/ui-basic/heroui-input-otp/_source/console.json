@@ -1,0 +1,42 @@
+[
+  {
+    "type": "warning",
+    "text": "Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.",
+    "location": "https://21st.dev/_next/static/chunks/75597-790e52a86e0a1ceb.js"
+  },
+  {
+    "type": "debug",
+    "text": "No user identifier available",
+    "location": "https://21st.dev/_next/static/chunks/49607-e2c4ae6acc287f39.js"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #2 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 354, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 500 ()",
+    "location": "https://21.up.railway.app/compile-css"
+  },
+  {
+    "type": "error",
+    "text": "Error in CSS compilation or upload: Error: Failed to process request\n    at https://21st.dev/_next/static/chunks/84439-33fc28266d81e869.js:1:9348",
+    "location": "https://21st.dev/_next/static/chunks/84439-33fc28266d81e869.js"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 404 ()",
+    "location": "https://pbs.twimg.com/profile_images/1970810743554531328/1HICDFv1_400x400.png"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 404 ()",
+    "location": "https://pbs.twimg.com/profile_images/1946774162124554241/hB_Gz7Wc_400x400.jpg"
+  },
+  {
+    "type": "error",
+    "text": "%c << query #5 %cusers.isCurrentUserAdmin%c %O \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n   \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: bold; \n    background-color: #3fb0d8;\n    color: white;\n    padding: 2px;\n  ; font-weight: normal; {input: undefined, result: TRPCClientError: User must be authenticated\n    at a.from (https://21st.dev/_next/static/chunks/240…, elapsedMs: 321, context: Object}",
+    "location": "https://21st.dev/_next/static/chunks/24037-09d5fba18cfdd89a.js"
+  }
+]
