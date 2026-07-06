@@ -251,7 +251,7 @@ function buildTask(comp: ScannedComponent, previewBaseUrl: string): ValidateTask
 
   if (comp.hasPreviewTsx) {
     instructions.push(
-      `G2 渲染校验: 调 .trae/skills/component-validate/scripts/screenshot-diff.ts --component "${comp.componentDir}" --preview-url "${previewUrl}"`
+      `G2 渲染校验: 调 scripts/screenshot-diff.ts --component "${comp.componentDir}" --preview-url "${previewUrl}"`
     );
     if (comp.hasOriginalPng) {
       instructions.push(`G2 模式: 双图对比（original.png vs rendered.png，相似度阈值 0.7）`);
